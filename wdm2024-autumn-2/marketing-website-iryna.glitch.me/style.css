@@ -1,0 +1,239 @@
+
+:root {
+  --color-bg: #69F7BE;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/* Our remix on glitch button */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+a {
+    text-decoration: none;
+    color: #ff4081; /* Bright accent color */
+    transition: color 0.3s ease;
+}
+
+
+a:hover {
+    color: #fff;
+}
+
+.current {
+ color: #ff4081;
+}
+
+header {
+    background: #0f0f0f;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #888;
+}
+
+nav a:hover {
+    color: #ff4081; /* Accent on hover */
+}
+
+.hero {
+    height: 600px;
+    background: url('background-placeholder.html') no-repeat center center/cover;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #ff4081;
+}
+
+/* Service List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 15px;
+    background: #2a2a2a;
+    margin-bottom: 10px;
+    border-left: 4px solid #ff4081; /* Accent on service list */
+    transition: background 0.3s ease;
+}
+
+ul li:hover {
+    background: #333;
+}
+
+/* Blog Page Styles */
+section {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+}
+
+.blog-post {
+    margin-bottom: 50px;
+    background-color: #252525;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-post:hover {
+    background-color: #333;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.blog-post a:hover {
+    background-color: #ff1a6b;
+}
+
+/* Footer */
+footer {
+    background: #0f0f0f;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+footer a {
+    color: #888;
+}
+
+footer a:hover {
+    color: #ff4081;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1a6b;
+}
+body {
+      background-image: url("../cdn.glitch.global/32c180bc-6721-4d71-9bd7-c61a1682f689/_%20(11).jpeg?v=1728394141736");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+       min-height: 100vh;
+    }</style>
+
+bg-image {
+      background-image: url('../cdn.glitch.global/32c180bc-6721-4d71-9bd7-c61a1682f689/_%20(11).jpeg?v=1728394141736'); /* Replace with your image URL */
+      background-size: cover; /* Ensures the image covers the whole container */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Avoids repeating the image */
+      min-height: 100vh; /* Minimum height of the container to be full screen */
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from travel-blog-ingaj.glitch.me/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 14:01:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - My Summer Diaries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>My Summer Diaries</h1>
+      <nav>
+        <ul>
+          <li><a href="index-2.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Blog Posts Section -->
+  <section id="blog" class="posts-grid">
+    <div class="container" id="posts-container">
+      <!-- Blog posts will be injected here by JavaScript -->
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>© 2024 My Summer Diaries</p>
+    </div>
+  </footer>
+
+ 
+
+<script>
+  // Example posts data
+  const posts = [
+    {
+      title: "Exploring the Streets of Paris",
+      image: '<img src="https://cdn.glitch.global/6a173a61-0fb5-4909-8294-bfa38cb866bc/photo_2024-09-22%2014.15.53.jpeg?v=1727111750306" alt="Paris" class="small-image">',
+      description: "Paris, A Love Story: Rediscovering Art and Heart",
+      link: "paris.html" // Link to Paris post
+    },
+    {
+      title: "The Charm of Portofino",
+      image: '<img src="https://cdn.glitch.global/6a173a61-0fb5-4909-8294-bfa38cb866bc/photo_2024-09-22%2014.15.35.jpeg?v=1727112201665" alt="Portofino" class="small-image">',
+      description: "Portofino: A Serene Escape by the Azure Sea",
+      link: "portofino.html" // Link to Portofino post
+    },
+    {
+      title: "Visiting Como Lake",
+      image: '<img src="https://cdn.glitch.global/6a173a61-0fb5-4909-8294-bfa38cb866bc/photo_2024-09-22%2014.15.29.jpeg?v=1727006171345" alt="Como Lake" class="small-image">',
+      description: "It was first time visiting the Como Lake. Bella ciao!",
+      link: "post-como.html" // Link to Como post
+    }
+    // Add more posts as needed
+  ];
+
+  // Function to render the posts
+  function renderPosts() {
+    const postsContainer = document.getElementById("posts-container");
+    posts.forEach(post => {
+      const postElement = `
+        <div class="post">
+          <div class="post-content">
+            <h3><a href="${post.link}">${post.title}</a></h3>
+            <p>${post.description}</p>
+          </div>
+          ${post.image}
+        </div>
+      `;
+      postsContainer.innerHTML += postElement;
+    });
+  }
+
+  // Call the function to render posts
+  window.onload = renderPosts;
+</script>
+
+<style>
+  .small-image {
+    width: 100px; /* Set smaller width */
+    height: auto; /* Maintain aspect ratio */
+    float: right; /* Align images to the right */
+    margin-left: 15px; /* Add some space between the content and the image */
+  }
+
+  .post {
+    clear: both; /* Ensure each post starts on a new line */
+    overflow: auto; /* Ensure content flows properly beside the image */
+    padding: 10px 0;
+  }
+
+  .post h3, .post p {
+    margin: 0;
+  }
+
+  .post-content {
+    overflow: hidden; /* Ensures the content stays aligned */
+  }
+
+  .post h3 {
+    font-size: 1.2em;
+  }
+
+  .post p {
+    font-size: 1em;
+  }
+
+  .post a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .post a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+
+<style>
+  .small-image {
+    width: 10px; /* Set width to a smaller size */
+    height: auto; /* Maintain aspect ratio */
+    float: left;
+  }
+
+  .post {
+    margin-bottom: 20px;
+  }
+
+  .post img {
+    display: block;
+    margin: 0 auto; /* Center the images */
+  }
+
+  .post h3 {
+    text-align: center;
+  }
+</style>
+
+
+</body>
+
+<!-- Mirrored from travel-blog-ingaj.glitch.me/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 14:01:03 GMT -->
+</html>
+
+

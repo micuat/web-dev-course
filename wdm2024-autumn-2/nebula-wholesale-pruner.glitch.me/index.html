@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from nebula-wholesale-pruner.glitch.me/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 14:13:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Daily Chronicle</title>
+        <style>
+            /* Base styles */
+            :root {
+                --background: 0 0% 100%;
+                --foreground: 222.2 84% 4.9%;
+                --card: 0 0% 100%;
+                --card-foreground: 222.2 84% 4.9%;
+                --popover: 0 0% 100%;
+                --popover-foreground: 222.2 84% 4.9%;
+                --primary: 222.2 47.4% 11.2%;
+                --primary-foreground: 210 40% 98%;
+                --secondary: 210 40% 96.1%;
+                --secondary-foreground: 222.2 47.4% 11.2%;
+                --muted: 210 40% 96.1%;
+                --muted-foreground: 215.4 16.3% 46.9%;
+                --accent: 210 40% 96.1%;
+                --accent-foreground: 222.2 47.4% 11.2%;
+                --destructive: 0 84.2% 60.2%;
+                --destructive-foreground: 210 40% 98%;
+                --border: 214.3 31.8% 91.4%;
+                --input: 214.3 31.8% 91.4%;
+                --ring: 222.2 84% 4.9%;
+                --radius: 0.5rem;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Inter", sans-serif;
+                background-color: hsl(var(--background));
+                color: hsl(var(--foreground));
+                line-height: 1.5;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+
+            .newspaper {
+                background-color: white;
+                border-radius: var(--radius);
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                overflow: hidden;
+            }
+
+            header {
+                text-align: center;
+                border-bottom: 1px solid hsl(var(--border));
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            .subtitle {
+                font-style: italic;
+                margin-bottom: 0.5rem;
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                padding: 1.5rem;
+            }
+
+            @media (min-width: 768px) {
+                article {
+                    flex-direction: row;
+                }
+            }
+
+            .content {
+                flex: 1;
+            }
+
+            h2 {
+                font-size: 1.875rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+            .author {
+                font-style: italic;
+                margin-bottom: 1.5rem;
+            }
+
+            .story {
+                margin-bottom: 1.5rem;
+            }
+
+            .accordion {
+                border: 1px solid hsl(var(--border));
+                border-radius: var(--radius);
+            }
+
+            .accordion-header {
+                background-color: hsl(var(--secondary));
+                padding: 0.75rem 1rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .accordion-content {
+                padding: 1rem;
+                display: none;
+            }
+
+            .accordion-content.active {
+                display: block;
+            }
+
+            .radio-group {
+                display: flex;
+                gap: 1rem;
+                margin-top: 0.5rem;
+            }
+
+            .radio-item {
+                display: flex;
+                align-items: center;
+            }
+
+            .radio-item input {
+                margin-right: 0.5rem;
+            }
+
+            .alert {
+                background-color: hsl(var(--destructive));
+                color: hsl(var(--destructive-foreground));
+                padding: 0.5rem 1rem;
+                border-radius: var(--radius);
+                margin-top: 0.5rem;
+            }
+
+            .button {
+                background-color: hsl(var(--primary));
+                color: hsl(var(--primary-foreground));
+                padding: 0.5rem 1rem;
+                border: none;
+                border-radius: var(--radius);
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            .button:hover {
+                background-color: hsl(var(--primary) / 0.9);
+            }
+
+            aside {
+                width: 100%;
+                margin-top: 1.5rem;
+            }
+
+            @media (min-width: 768px) {
+                aside {
+                    width: 200px;
+                    margin-top: 0;
+                    margin-left: 1.5rem;
+                }
+            }
+
+            aside img {
+                width: 100%;
+                height: auto;
+                border: 1px solid hsl(var(--border));
+                border-radius: var(--radius);
+            }
+
+            .image-caption {
+                text-align: center;
+                font-size: 0.875rem;
+                margin-top: 0.5rem;
+            }
+
+            .dialog {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            }
+
+            .dialog-content {
+                background-color: white;
+                padding: 2rem;
+                border-radius: var(--radius);
+                max-width: 500px;
+                width: 90%;
+            }
+
+            .dialog-header {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+            .dialog-body img {
+                width: 100%;
+                height: auto;
+                border-radius: var(--radius);
+                margin-top: 1rem;
+            }
+
+            .trolling-area {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+            }
+
+            .trolling-area h1 {
+                max-width: 600px;
+                color: white;
+                text-align: center;
+                z-index: 2;
+            }
+
+            .trolling-area img {
+                width: 500px;
+                position: absolute;
+                top: 20%;
+                left: 25%;
+                opacity: 0.9;
+                z-index: 0;
+            }
+
+            .trolling-area span {
+                font-size: 16px;
+                color: white;
+            }
+
+            .overflow-hidden {
+                overflow: hidden;
+            }
+
+            .pi-container {
+                display: flex;
+                gap: 6px;
+            }
+
+            .start-of-pi {
+                width: fit-content;
+                font-size: 24px;
+                padding: 16px;
+                background-color: white;
+                color: black;
+            }
+
+            .trolling-area input {
+                width: 420px;
+                font-family: "Yesteryear", serif;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 16px;
+                border: 0;
+            }
+
+            .input-wrong {
+                color: red;
+            }
+
+            .troll-inactive {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="trollingArea" class="trolling-area troll-inactive">
+            <img
+                src="https://media.tenor.com/LGieStV4yf0AAAAM/flag-flag-waver.gif"
+                alt=""
+            />
+            <h1>
+                Sorry! this website has exceeded the bandwidth of the entire
+                country of Albania, where the website servers are located,
+                please enter password
+            </h1>
+            <span>Enter the first 100 digits of π</span>
+            <div class="pi-container">
+                <div class="start-of-pi">3.</div>
+                <input id="trollInput" type="text" />
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="newspaper">
+                <header>
+                    <h1>The Daily Chronicle</h1>
+                    <p class="subtitle">Truth is stranger than fiction</p>
+                    <p>May 15, 2023</p>
+                </header>
+                <article>
+                    <div class="content">
+                        <h2>Local Resident's Extraordinary Life Unveiled</h2>
+                        <p class="author">
+                            By Taras, The man the myth the legend
+                        </p>
+                        <p>
+                            In an exclusive interview, Taras, a seemingly
+                            ordinary resident of our town, revealed a series of
+                            extraordinary life experiences that have left our
+                            community in awe. As we delve into his remarkable
+                            journey, we invite our readers to discern fact from
+                            fiction in this incredible tale.
+                        </p>
+                        <div id="stories"></div>
+                        <p>
+                            As our readers contemplate these extraordinary
+                            claims, we encourage you to engage with the
+                            interactive radio buttons beside each statement.
+                            Your participation will unveil a surprising twist in
+                            this captivating story.
+                        </p>
+                        <button class="button" onclick="verifyData()">
+                            Verify Data
+                        </button>
+                    </div>
+                    <aside>
+                        <img
+                            src="https://i.ibb.co/L6cDCv6/photo-2025-01-03-15-33-04.jpg"
+                            alt="Taras"
+                        />
+                        <p class="image-caption">
+                            Taras, the man behind the extraordinary tales
+                        </p>
+                    </aside>
+                </article>
+            </div>
+        </div>
+
+        <div id="resultDialog" class="dialog" style="display: none">
+            <div class="dialog-content">
+                <div class="dialog-header" id="dialogTitle"></div>
+                <div class="dialog-body" id="dialogContent"></div>
+            </div>
+        </div>
+
+        <script>
+            const stories = [
+                {
+                    title: "(Age 6 – Candy Thief)",
+                    content: `At the age of 6, I had the opportunity to learn valuable lessons in strategy, foresight, and self-discipline when I successfully stole a piece of candy from the store without being caught. This experience helped me develop essential skills that continue to inform my approach to problem-solving and decision-making in a professional context.<br>
+
+<br>Key Skills Developed:
+
+<br>- <b>Strategic Thinking:<br></b> The ability to assess my environment, understand potential outcomes, and devise a plan to achieve my goal taught me how to navigate complex situations with care and precision—a skill vital in any business strategy.
+
+<br>- <b>Risk Assessment & Decision-Making:<br></b> I learned to weigh potential risks against rewards, enhancing my ability to make decisions in situations that require balancing immediate objectives with long-term consequences.
+
+<br>- <b>Self-Discipline & Focus:<br></b> The experience taught me the importance of managing impulse control and staying focused on goals, even when faced with tempting distractions—skills that have helped me maintain efficiency and prioritize tasks effectively in the workplace.
+
+<br>- <b>Adaptability:<br></b> This early experience also honed my ability to adapt quickly to dynamic situations and evaluate my choices as new information becomes available, which is critical in fast-paced work environments.
+
+<br>In the years following the candy incident, I experienced an ongoing sense of heightened awareness—constantly anticipating that I might still be under scrutiny. This lingering "paranoia" sharpened my ability to remain vigilant, cautious, and proactive in assessing potential risks in any situation. While the experience was relatively minor, it taught me the value of thinking several steps ahead and always being prepared for the unexpected—traits that have served me well in navigating complex work challenges and mitigating potential issues before they arise.
+
+Though small in nature, this formative event laid the groundwork for my approach to navigating complex challenges with a calm, thoughtful mindset—qualities that I continue to apply in every professional role I take on.`,
+                },
+                {
+                    title: "(Age 17 – Psychiatric Hospitalization for Schizophrenia)",
+                    content: `At the age of 17, I was admitted to a psychiatric hospital for treatment of schizophrenia. This challenging and transformative experience allowed me to develop resilience, emotional intelligence, and a deep understanding of mental health, all of which have played a critical role in shaping my professional mindset and approach to work.<br>
+<br><b>Key Skills Developed:</b><br>
+<br><b>Resilience & Perseverance:</b><br> Navigating through difficult personal challenges and working through my recovery has taught me the power of resilience. I've learned how to face adversity head-on, adapt to new circumstances, and continue pushing forward even when the path is unclear—an invaluable skill in any high-pressure work environment.
+<br><b>Self-Awareness & Emotional Intelligence:</b><br> Managing a mental health condition taught me to be more in tune with my emotions, recognize my triggers, and develop healthier coping mechanisms. This heightened self-awareness and emotional intelligence have translated into better communication, empathy, and conflict resolution in team settings.
+<br><b>Problem-Solving & Adaptability:</b><br> Recovery required constant adjustment to new treatments and strategies, fostering my ability to think critically, stay flexible, and find solutions in dynamic, evolving situations. I now approach work challenges with a creative, adaptable mindset, finding ways to navigate ambiguity and uncertainty effectively.
+<br><b>Stress Management & Time Management:</b><br> Through therapy and structured routines, I developed strong stress management and time management skills, learning how to prioritize tasks and maintain productivity while balancing my personal and professional life. These skills are essential for meeting deadlines and managing competing priorities in the workplace.
+Commitment to Mental Health Awareness:</b><br> My experience has driven a commitment to mental health advocacy, promoting awareness and reducing stigma in the workplace.I bring a compassionate, inclusive approach to fostering a supportive environment for colleagues, particularly in high-stress or emotionally charged situations.
+This period in my life, while challenging, instilled a deep understanding of the importance of mental health, personal growth, and the value of perseverance. I continue to apply the lessons learned from my recovery to every aspect of my career, approaching my work with empathy, resilience, and a commitment to overcoming obstacles.`,
+                },
+                {
+                    title: "8 Years – osu! Player, Competitor in osu! World Cup)",
+                    content: `Over the past eight years, I have honed my skills by playing osu!, a rhythm-based video game that demands precision, focus, and strategic thinking. I also had the privilege of competing in the prestigious osu! World Cup, where I represented top-tier players on a global stage. Though not monetized, my involvement in the competitive scene has significantly sharpened my abilities in time management, teamwork, and performance under pressure—skills that are highly relevant in any professional environment.
+<br><br>Key Skills Developed:</b><br>
+<br><b>Discipline & Perseverance:</b><br> Competing at a high level in osu! required intense dedication, focus, and consistency. Setting personal and team goals, staying motivated through challenges, and continuously improving my performance have shaped my strong work ethic, which I bring to every task in a professional setting.
+<br><b>Focus & Attention to Detail:</b><br> osu! demands high levels of concentration and precision, especially in competitive scenarios like the osu! World Cup. My ability to maintain laser-like focus, identify minute patterns, and execute with accuracy has greatly improved my attention to detail and ability to handle complex tasks in a work environment.
+<br><b>Teamwork & Collaboration:</b><br> Representing a team in the osu! World Cup allowed me to develop key collaboration and communication skills. Working closely with others toward a shared goal, coordinating strategies, and offering mutual support under pressure has made me an effective team player, capable of contributing positively to team dynamics.
+<br><b>Resilience & Performance Under Pressure:</b><br> Competing at an international level in a highly competitive environment taught me how to perform under pressure. I learned to stay calm, manage stress, and focus on the task at hand even in high-stakes moments—qualities that are invaluable when facing tight deadlines or difficult projects.
+<br><b>Time Management & Goal Setting:</b><br> Balancing practice for osu! tournaments with other responsibilities developed my time management skills. I learned how to prioritize tasks, set achievable goals, and allocate time efficiently—skills that have proven essential for managing multiple projects and meeting deadlines in the workplace.
+<br><b>Problem-Solving & Adaptability:</b><br> The game's constantly evolving challenges required quick thinking, adaptability, and strategic problem-solving. Whether adapting to new game mechanics or adjusting to an opponent's tactics, I've learned to stay flexible and find creative solutions to challenges—an approach I apply to work challenges as well.
+<br><b>Self-Improvement & Feedback Integration:</b><br> osu!'s competitive community provides constant feedback, allowing players to evaluate performance and improve. I've learned to actively seek out constructive criticism, reflect on my performance, and continuously strive for better results—an attitude I carry into my professional development.
+While my time in osu! was not financially lucrative, competing in the osu! World Cup provided me with invaluable life skills. These experiences have shaped my ability to perform under pressure, work effectively in teams, and focus on continuous self-improvement—all qualities that I bring to my professional career.`,
+                },
+                {
+                    title: "(Current - Part-Time Hobby: Road Sign stealer)",
+                    content: `As part of a unique personal interest, I have been involved in the theft of road signs, which has allowed me to develop a range of skills directly applicable to a work environment. While unconventional, this hobby has strengthened my abilities in strategic thinking, risk management, and creativity—critical assets for navigating complex challenges in professional settings.<br>
+      <br>Key Skills Developed:<br>
+<br><b>Strategic Planning & Resourcefulness:</b><br> Collecting road signs requires careful planning, including sourcing, timing, and navigating environments effectively. This has honed my ability to think strategically, plan ahead, and solve problems efficiently in challenging or unconventional circumstances.
+<br><b>Risk Management & Decision-Making:</b><br> The activity inherently involves risk assessment and decision-making, as I continuously evaluate potential consequences. This has sharpened my ability to assess risks and make informed decisions, a skill that I apply regularly to balance competing priorities in my work life.
+<br><b>Adaptability & Innovation:</b><br> The hobby encourages creative thinking as I identify new ways to obtain specific items within legal and ethical boundaries. This has fostered my ability to think outside the box and adapt to rapidly changing environments, which is essential in any fast-paced, dynamic work setting.
+<br><b>Attention to Detail & Persistence:</b><br> My involvement in road sign collection has cultivated a meticulous attention to detail, as I need to identify rare and valuable signs. It has also developed my persistence and ability to stay focused on long-term objectives, even when immediate success is not guaranteed.
+<br><b>Resilience & Conflict Resolution:</b><br> While engaging in this activity, I have had to navigate occasional conflicts and challenges, which have developed my ability to de-escalate tense situations and maintain composure in stressful or unpredictable environments.
+Though unconventional, this activity has provided me with a set of skills that complement my professional abilities. I bring creativity, strategic thinking, and a proactive, resourceful mindset to any team or project I undertake.`,
+                },
+                {
+                    title: "(Current – Under IRS Investigation)",
+                    content: `Currently, I am undergoing an investigation by the IRS, which has provided me with a unique opportunity to enhance my skills in risk management, financial compliance, and crisis management. While the process is ongoing, it has significantly sharpened my ability to navigate complex regulatory environments, manage uncertainty, and maintain a proactive, solutions-focused mindset. This experience has instilled key competencies that are directly applicable to high-stakes, compliance-driven professional environments.<br>
+      <br>Key Skills Developed:<br>
+<br><b>Risk Management & Compliance:</b><br> The IRS investigation has deepened my understanding of financial regulations and tax compliance. I've gained firsthand insight into the importance of adhering to legal and regulatory standards, and have developed a keen awareness of how to assess, mitigate, and navigate financial risks—skills that are valuable in managing organizational compliance and minimizing potential legal risks.
+<br><b>Crisis Management & Resilience:</b><br> The ongoing nature of the investigation has taught me how to handle high-pressure situations with professionalism and resilience. I've learned to remain calm, gather all necessary documentation, and work with experts to resolve issues effectively—skills that are crucial for managing crises and staying productive in difficult circumstances.
+<br><b>Attention to Detail & Organizational Skills:</b><br> The investigation requires meticulous attention to detail as I work through financial records, gather documentation, and address concerns raised by the IRS. This process has honed my organizational skills and my ability to keep track of complex data—qualities that directly translate to managing projects and meeting deadlines in a business environment.
+<br><b>Problem-Solving & Adaptability:</b><br> Navigating the complexities of the investigation has required me to think critically, adapt quickly to changing requirements, and develop solutions to unforeseen challenges. This has strengthened my problem-solving abilities and adaptability, which are essential when addressing challenges in a fast-paced work environment.
+<br><b>Communication & Negotiation:</b><br> In dealing with legal and financial experts, as well as communicating with the IRS, I have enhanced my ability to convey complex information clearly, negotiate effectively, and collaborate with diverse professionals. These communication and negotiation skills are crucial in any workplace setting, especially when dealing with cross-functional teams or external stakeholders.
+<br><b>Ethical Decision-Making & Accountability:</b><br> This experience has reinforced the importance of personal and professional accountability. It has deepened my commitment to ethical decision-making, ensuring that my future actions are transparent and in compliance with legal requirements. This focus on ethics is critical to maintaining trust and integrity in any organization.
+While the investigation itself is challenging, it has been an invaluable learning experience that has developed my resilience, problem-solving skills, and financial acumen. I now bring a heightened level of diligence, critical thinking, and a strong commitment to compliance to my professional work.`,
+                },
+            ];
+
+            const storyAnswers = ["", "", "", "", ""];
+            let showWarnings = false;
+
+            function createAccordion(story, index) {
+                const accordion = document.createElement("div");
+                accordion.className = "story accordion";
+                accordion.innerHTML = `
+                <div class="accordion-header" onclick="toggleAccordion(${index})">
+                    ${story.title}
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content" id="content-${index}">
+                    ${story.content}
+                </div>
+                <div class="radio-group">
+                    <label class="radio-item">
+                        <input type="radio" name="story-${index}" value="true" onchange="handleRadioChange(${index}, 'true')">
+                        True
+                    </label>
+                    <label class="radio-item">
+                        <input type="radio" name="story-${index}" value="false" onchange="handleRadioChange(${index}, 'false')">
+                        False
+                    </label>
+                </div>
+                <div class="alert" id="alert-${index}" style="display: none;">
+                    Please select an option for this statement.
+                </div>
+            `;
+                return accordion;
+            }
+
+            function toggleAccordion(index) {
+                const content = document.getElementById(`content-${index}`);
+                content.classList.toggle("active");
+                const icon =
+                    content.previousElementSibling.querySelector(
+                        ".accordion-icon"
+                    );
+                icon.textContent = content.classList.contains("active")
+                    ? "▲"
+                    : "▼";
+            }
+
+            function handleRadioChange(index, value) {
+                storyAnswers[index] = value;
+                showWarnings = false;
+                document.getElementById(`alert-${index}`).style.display =
+                    "none";
+            }
+
+            function verifyData() {
+                if (storyAnswers.every((answer) => answer !== "")) {
+                    const correctAnswers = [
+                        "true",
+                        "false",
+                        "true",
+                        "true",
+                        "true",
+                    ];
+                    const isCorrect = storyAnswers.every(
+                        (answer, index) => answer === correctAnswers[index]
+                    );
+                    showResult(isCorrect);
+                } else {
+                    showWarnings = true;
+                    storyAnswers.forEach((answer, index) => {
+                        const alert = document.getElementById(`alert-${index}`);
+                        alert.style.display = answer === "" ? "block" : "none";
+                    });
+                }
+            }
+
+            function showResult(isCorrect) {
+                const dialog = document.getElementById("resultDialog");
+                const dialogTitle = document.getElementById("dialogTitle");
+                const dialogContent = document.getElementById("dialogContent");
+
+                dialogTitle.textContent = isCorrect
+                    ? "Congratulations!"
+                    : "Not quite right...";
+                dialogContent.innerHTML = isCorrect
+                    ? `
+                    <p>You've successfully solved the mystery!</p>
+                    <img src="https://i.ibb.co/DVqjFhp/photo-2025-01-03-08-14-18.jpg" alt="Congratulations" style="width: 100%; height: auto; margin-top: 1rem;">
+                `
+                    : `
+                    <p>Unfortunately, that's not correct. Here's a map of Albania to cheer you up:</p>
+                    <img src="https://www.youngpioneertours.com/wp-content/uploads/2020/09/map-of-albania.png" alt="Map of Albania" style="width: 100%; height: auto; margin-top: 1rem;">
+                `;
+
+                dialog.style.display = "flex";
+            }
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const storiesContainer = document.getElementById("stories");
+                stories.forEach((story, index) => {
+                    storiesContainer.appendChild(createAccordion(story, index));
+                });
+
+                document.addEventListener("click", (event) => {
+                    if (event.target.classList.contains("dialog")) {
+                        event.target.style.display = "none";
+                    }
+                });
+            });
+        </script>
+
+        <script>
+            const trollArea = document.querySelector("#trollingArea");
+            const body = document.querySelector("body");
+            const trollInput = document.querySelector("#trollInput");
+            const digitsOfPi =
+                "1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679";
+
+            if (localStorage.getItem("trolled") === "true") {
+                trollArea.classList.remove("troll-inactive");
+                body.classList.add("overflow-hidden");
+            }
+
+            setTimeout(() => {
+                localStorage.setItem("trolled", "true");
+                trollArea.classList.remove("troll-inactive");
+                body.classList.add("overflow-hidden");
+            }, 180000);
+
+            trollInput.addEventListener("input", (e) => {
+                if (digitsOfPi === e.target.value) {
+                    trollArea.classList.add("troll-inactive");
+                    body.classList.remove("overflow-hidden");
+                }
+
+                if (
+                    digitsOfPi.slice(0, e.target.value.length) ===
+                    e.target.value
+                ) {
+                    trollInput.classList.remove("input-wrong");
+                } else {
+                    trollInput.classList.add("input-wrong");
+                }
+            });
+
+            trollInput.addEventListener("keydown", (e) => {
+                if (event.key === "Backspace") {
+                    if (trollInput.classList.contains("input-wrong")) {
+                        e.target.value = "";
+                    }
+                }
+            });
+
+            trollInput.addEventListener("paste", (e) => e.preventDefault());
+        </script>
+    </body>
+
+<!-- Mirrored from nebula-wholesale-pruner.glitch.me/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 14:13:02 GMT -->
+</html>

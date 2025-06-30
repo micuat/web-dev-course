@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from mutherland.glitch.me/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 13:58:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutherland</title>
+    <style>
+        body {
+            background-color: #FFC0CB;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff1493;
+            text-align: center;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .buttons a {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons a:hover {
+            background-color: #ff1493;
+        }
+
+        .post {
+            margin-bottom: 40px;
+        }
+
+        .post-title {
+            font-size: 24px;
+            color: #ff69b4;
+            margin-bottom: 10px;
+        }
+
+        .celebrity-pic {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Form Styling */
+        .form-container {
+            margin-top: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff1493;
+        }
+
+        .success-message {
+            display: none;
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        #photo-gallery, #more-posts {
+            margin-top: 40px;
+        }
+
+        .gallery-image {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mutherland</h1>
+
+        <!-- Buttons at the top -->
+        <div class="buttons">
+            <a href="#photo-gallery">Photo Gallery</a>
+            <a href="#more-posts">More Posts</a>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title">Breaking News: Lindsay Caught in Coke!</h2>
+            <div id="image-container"></div>
+            <p>Lindsay was recently spotted in an intense public feud with Usher. Rumor has it that this may affect their latest movie collaboration.</p>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title">Influencers' Wild Vegas Weekend!</h2>
+            <div id="red-carpet-image"></div>
+            <p>At the recent Tarte trip, several influencers reportedly fainted from the infamous 'Galaxy Gas', and 2 were hospitalized.</p>
+        </div>
+
+        <!-- Photo Gallery Section -->
+        <div id="photo-gallery">
+            <h2>Celebrity Photo Gallery</h2>
+            <img class="gallery-image" src="../cdn.glitch.global/f31e27c7-a5b5-4d37-87d4-3510f98fd192/d967a613ca7ef26f180b146bf400a13c3bcb.jpg?v=1728632942846" alt="Gallery Image 1">
+            <img class="gallery-image" src="../cdn.glitch.global/f31e27c7-a5b5-4d37-87d4-3510f98fd192/TokyoPremiere1a8f2.webp?v=1728632950363" alt="Gallery Image 2">
+        </div>
+
+        <!-- More Posts Section -->
+        <div id="more-posts">
+            <h2>More Celebrity Gossip</h2>
+            <div class="post">
+                <h2 class="post-title">Breaking : Jojo on the Talk Tuah Podcast!</h2>
+                <p>New blind item suggests Jojo, the "Karma" singer, was high out of her mind during the 'Hawk Tuah' Girls podcast.</p>
+            </div>
+            <div class="post">
+                <h2 class="post-title">Does Beyonce Know?</h2>
+                <p>After the allegations against P Diddy went viral, Beyonce got caught in the crossfire...</p>
+            </div>
+        </div>
+
+        <!-- Submission Form -->
+        <div class="form-container">
+            <h2>Submit Your Celebrity Gossip Tip</h2>
+            <form id="gossipForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="gossip">Your Gossip Tip:</label>
+                <textarea id="gossip" name="gossip" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+                <p class="success-message" id="successMessage">Thank you for your submission! We'll review your tip.</p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for image insertion
+        var imageContainer = document.getElementById('image-container');
+        var imgElement = document.createElement('img');
+        imgElement.src = '../cdn.glitch.global/f31e27c7-a5b5-4d37-87d4-3510f98fd192/when-people-thought-lindsay-lohan-was-carrying-cocaine-in-v0-agu1veqyhy1c14afa.webp?v=1726230212786'; // Image URL
+        imgElement.alt = 'Celebrity X';
+        imgElement.className = 'celebrity-pic';
+        imageContainer.appendChild(imgElement);
+
+        var redCarpetImage = document.getElementById('red-carpet-image');
+        var imgElement2 = document.createElement('img');
+        imgElement2.src = '../cdn.glitch.global/f31e27c7-a5b5-4d37-87d4-3510f98fd192/Untitled111_2023062823101104ae.jpg?v=1726229960268'; // Image URL
+        imgElement2.alt = 'Celebrity Z on the red carpet';
+        imgElement2.className = 'celebrity-pic';
+        redCarpetImage.appendChild(imgElement2);
+
+        // JavaScript for form submission
+        document.getElementById('gossipForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from reloading the page
+
+            // Show the success message after form submission
+            var successMessage = document.getElementById('successMessage');
+            successMessage.style.display = 'block';
+
+            // Optionally, clear the form fields
+            document.getElementById('gossipForm').reset();
+        });
+    </script>
+</body>
+
+<!-- Mirrored from mutherland.glitch.me/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 13:58:57 GMT -->
+</html>

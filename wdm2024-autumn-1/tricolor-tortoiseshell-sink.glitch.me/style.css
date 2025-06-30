@@ -1,0 +1,82 @@
+/* 
+  This is where you can add your custom CSS and design what you think 
+  should be the default styles of the Web. The CSS sky's the limit, but 
+  keep in mind that the page should remain accessible (eg. high contrasting 
+  colors and large enough font sizes)
+
+  When you're done, add #codejam #dreamcss to this project's description. 
+
+  HAPPY JAMMING! 🍓🎏
+*/
+
+/*
+Import the ZX Spectrum-7 Font Family
+https://www.cdnfonts.com/ch/zx-spectrum-7.font
+*/
+@import url("https://fonts.cdnfonts.com/css/zx-spectrum-7");
+
+html {
+  padding: 4em;
+  background: #000000;
+  width: 32rem;
+}
+
+body {
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "ZX Spectrum7 Bold", sans-serif;
+}
+
+h1 {
+  font-size: 60pt;
+  background: #d80000;
+}
+
+h2,
+h3,
+h4 {
+  font-size: 30pt;
+  background: #00d800;
+}
+
+body,
+code {
+  font-family: "ZX Spectrum-7", sans-serif;
+  font-size: 20pt;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  margin-left: -45px;
+  max-width: 496px;
+  transform: skew(15deg, 15deg);
+}
+
+.content {
+ max-width: 496px;
+  background: #d8d8d8;
+}
+
+
+video {
+  opacity: 0;
+  order: 2;
+  width: 80%;
+  position: sticky;
+  top: 0;
+  margin-left: 32px;
+  transform: skew(25deg, -25deg) rotate(25deg);
+}
+
+.baobab {
+  opacity: 1;
+}

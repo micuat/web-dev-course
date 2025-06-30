@@ -1,0 +1,39 @@
+HTTrack3.49-2 launched on Mon, 30 Jun 2025 16:57:45 at https://tricolor-tortoiseshell-sink.glitch.me https://hiphop-events-2025.glitch.me https://quilled-spiced-car.glitch.me https://miasmatchablog.glitch.me https://explorekyivolha.glitch.me https://dingkang-test.glitch.me https://goodvibezrunningcamp.glitch.me https://my-summer-diary.glitch.me https://crystal-low-albertosaurus.glitch.me https://mutherland.glitch.me https://elizabeths-clothing.glitch.me https://accurate-rain-wannanosaurus.glitch.me https://periodic-rigorous-selenium.glitch.me https://travel-blog-ingaj.glitch.me https://aleksander-ojamets.glitch.me https://my-piano-blog.glitch.me https://marketing-website-iryna.glitch.me https://film-camera.glitch.me https://lada-lex-bookshelf-main.glitch.me https://andriis-movie-blog.glitch.me +cdn.glitch.global* +cdn.glitch.com*
+(httrack https://tricolor-tortoiseshell-sink.glitch.me https://hiphop-events-2025.glitch.me https://quilled-spiced-car.glitch.me https://miasmatchablog.glitch.me https://explorekyivolha.glitch.me https://dingkang-test.glitch.me https://goodvibezrunningcamp.glitch.me https://my-summer-diary.glitch.me https://crystal-low-albertosaurus.glitch.me https://mutherland.glitch.me https://elizabeths-clothing.glitch.me https://accurate-rain-wannanosaurus.glitch.me https://periodic-rigorous-selenium.glitch.me https://travel-blog-ingaj.glitch.me https://aleksander-ojamets.glitch.me https://my-piano-blog.glitch.me https://marketing-website-iryna.glitch.me https://film-camera.glitch.me https://lada-lex-bookshelf-main.glitch.me https://andriis-movie-blog.glitch.me - +cdn.glitch.global* +cdn.glitch.com* -r6 )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:57:52	Warning: 	Found for https://hiphop-events-2025.glitch.me/robots.txt
+16:57:52	Warning: 	File has moved from https://hiphop-events-2025.glitch.me/robots.txt to /
+16:58:35	Warning: 	Found for https://goodvibezrunningcamp.glitch.me/robots.txt
+16:58:35	Warning: 	File has moved from https://goodvibezrunningcamp.glitch.me/robots.txt to /
+16:58:41	Warning: 	Found for https://my-summer-diary.glitch.me/robots.txt
+16:58:41	Warning: 	File has moved from https://my-summer-diary.glitch.me/robots.txt to /
+16:58:46	Warning: 	Found for https://crystal-low-albertosaurus.glitch.me/robots.txt
+16:58:46	Warning: 	File has moved from https://crystal-low-albertosaurus.glitch.me/robots.txt to /
+16:58:58	Warning: 	Found for https://elizabeths-clothing.glitch.me/robots.txt
+16:58:58	Warning: 	File has moved from https://elizabeths-clothing.glitch.me/robots.txt to /
+16:59:31	Warning: 	Found for https://periodic-rigorous-selenium.glitch.me/robots.txt
+16:59:31	Warning: 	File has moved from https://periodic-rigorous-selenium.glitch.me/robots.txt to /
+16:59:43	Warning: 	Found for https://aleksander-ojamets.glitch.me/robots.txt
+16:59:43	Warning: 	File has moved from https://aleksander-ojamets.glitch.me/robots.txt to /
+16:59:48	Warning: 	Found for https://my-piano-blog.glitch.me/robots.txt
+16:59:48	Warning: 	File has moved from https://my-piano-blog.glitch.me/robots.txt to /
+17:00:03	Warning: 	Found for https://film-camera.glitch.me/robots.txt
+17:00:03	Warning: 	File has moved from https://film-camera.glitch.me/robots.txt to /
+17:00:08	Warning: 	Found for https://lada-lex-bookshelf-main.glitch.me/robots.txt
+17:00:08	Warning: 	File has moved from https://lada-lex-bookshelf-main.glitch.me/robots.txt to /
+17:00:18	Warning: 	Found for https://andriis-movie-blog.glitch.me/robots.txt
+17:00:18	Warning: 	File has moved from https://andriis-movie-blog.glitch.me/robots.txt to /
+17:00:22	Warning: 	Found for https://hiphop-events-2025.glitch.me/posts/center. (lv)/
+17:00:22	Warning: 	File has moved from https://hiphop-events-2025.glitch.me/posts/center. (lv)/ to /
+17:01:15	Error: 	"Forbidden" (403) at link https://cdn.glitch.global/32c180bc-6721-4d71-9bd7-c61a1682f689/_ (12 (from https://marketing-website-iryna.glitch.me/)
+17:01:21	Error: 	"Not Found" (404) at link https://marketing-website-iryna.glitch.me/background-placeholder.jpg (from https://marketing-website-iryna.glitch.me/style.css)
+17:01:21	Error: 	"Forbidden" (403) at link https://cdn.glitch.global/32c180bc-6721-4d71-9bd7-c61a1682f689/_ (11 (from https://marketing-website-iryna.glitch.me/style.css)
+17:01:21	Error: 	"Not Found" (404) at link https://marketing-website-iryna.glitch.me/about-bg.jpg (from https://marketing-website-iryna.glitch.me/about-me.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 36 seconds : 277 links scanned, 251 files written (89529792 bytes overall) [89758047 bytes received at 415546 bytes/sec], 2.5 requests per connection
+(4 errors, 24 warnings, 0 messages)

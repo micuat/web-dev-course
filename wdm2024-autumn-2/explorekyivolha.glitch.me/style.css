@@ -1,0 +1,289 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica', 
+    background-color: #001f3f; /* Navy blue */
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+/* Header Styles */
+header {
+    background-color: #001f3f;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+/* Basic Reset for the list */
+ul.nav-buttons {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the buttons */
+}
+
+/* Style for each list item (button-like) */
+.nav-buttons li {
+    margin-right: 15px; /* Space between the buttons */
+}
+
+.nav-buttons li:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+/* Button style for links */
+.nav-buttons a {
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding to look like a button */
+    background-color: #ffffff; /* White background */
+    color: #001f3f; /* Navy blue text */
+    border: 2px solid #001f3f; /* Navy blue border */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor to indicate it's a button */
+    display: inline-block; /* Ensure it's inline but block-like */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth hover effect */
+    font-family: Arial, sans-serif; /* Font style */
+}
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fffdf7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    color: #4CAF50;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    background: linear-gradient(45deg, #ff6b6b, #f9ca24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2:hover {
+    background: linear-gradient(45deg, #00cec9, #0984e3);
+}
+
+/* Section Styling */
+#my-favorite-places {
+    background: #f7f7f7;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#my-favorite-places h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #555;
+}
+
+/* Keyframes Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* General Body Styling - Clean White Background */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background-color: #ffffff; /* Pure white background */
+    color: #333333; /* Dark gray text for readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Headings Styling */
+h1, h2, h3 {
+    font-family: 'Lobster', cursive; /* Stylish font for headings */
+    color: #4CAF50; /* Green accent for headings */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 3em; /* Larger main title */
+    text-align: center; /* Centered title */
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center; /* Centered headings for a cleaner layout */
+    background: linear-gradient(45deg, #4CAF50, #8BC34A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #333333; /* White for section titles */
+    margin-bottom: 15px;
+}
+
+/* Section Styling - Add Padding and Borders */
+#my-favorite-places {
+    background-color: #ffffff; /* White background for content area */
+    border: 1px solid #e0e0e0; /* Light white border */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto;
+    max-width: 900px; /* Center and limit the width */
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2em;
+    color: #555555; /* Softer gray for paragraphs */
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
+}
+
+/* Links Styling */
+a {
+    color: #4CAF50; /* Green links for accents */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add Hover Effects for Sections */
+.place-item:hover {
+    background-color: #f9f9f9; /* Light gray hover effect */
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Keyframes Animation for Heading */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Hover effect for button */
+.nav-buttons a:hover {
+    background-color: #001f3f; /* Navy blue background on hover */
+    color: #ffffff; /* White text on hover */
+    border-color: #001f3f; /* Navy blue border remains */
+}
+
+/* Active (clicked) state */
+.nav-buttons a:active {
+    background-color: #0056b3; /* Darker navy blue when clicked */
+    color: #ffffff; /* White text */
+}
+
+/* Section Styles */
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: #002d62; /* Darker navy blue */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001f3f;
+    border-top: 2px solid white;
+}
+
+footer p {
+    margin: 5px 0;
+}

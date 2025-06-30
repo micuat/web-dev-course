@@ -1,0 +1,399 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #FFFFFF;
+  --color-text-main: #000000;
+  --color-primary: #AFECE0;
+  --wrapper-height: 85vh;
+  --image-max-width: 320px;
+  --font-family: "Minecraft";
+  --font-family-header: "Minecraft";
+  
+}
+
+
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-img img {
+  max-width: 350px; /* Adjust image size */
+  height: auto;
+}
+
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url("../../cdn.glitch.global/72269cee-1b74-40ea-8dc7-7b425d754367/Minecraftia0c7b.ttf?v=1740733709870") format("truetype");
+}
+
+/* Our remix on glitch button */
+.btn--remix {
+  font-family: HK Grotesk;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: center;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  margin-left: auto;
+}
+.btn--remix img {
+  margin-right: 0.5rem;
+}
+.btn--remix:hover {
+  background-color: #D0FFF1;
+}
+
+/* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #fff;
+}
+
+.footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: Minecraft;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.rem;
+  color: var(--color-text-main);
+  text-decoration: none;
+  border-style: none;
+}
+.footer a:hover {
+  background: #b6f7be;
+}
+
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+main{
+  margin-left: 30px;
+  margin-right:30px;
+}
+/* Page structure */
+body {
+  font-family: var(--font-family);
+  background-color: #f0f4c3 ;
+  color: var(--color-text-main);
+  border: 40px solid transparent; 
+  border-image: url("../../cdn.glitch.global/72269cee-1b74-40ea-8dc7-7b425d754367/bambood958.png?v=1740735032621") 40 round;
+}
+.wrapper {
+  min-height: var(--wrapper-height);
+  place-items: center;
+  margin: 2rem 2rem 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Typography */
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5 !important;
+  font-size: 1rem;
+}
+
+/* Style the <p> elements inside .content */
+.content p {
+    max-width: 600px; /* Adjust to match heading width */
+    text-align: center;
+    margin: 0 auto 10px; /* Center the text with spacing */
+    font-size: 1rem; /* Adjust text size if needed */
+    line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2rem 0 .8rem;
+  font-family: var(--font-family-header);
+  font-weight: 600;
+  line-height: 1;
+  color: #149726;
+}
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+  font-size: 5rem;
+  display: inline-flex;
+  color: #0f6f1c;
+  padding:10px;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+/* List styles */
+ul > li,
+ol > li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+ul {
+  padding: 0 0 0 14px;
+  margin: 0;
+}
+
+ul.no-bullet {
+  list-style-type: none;
+}
+
+/* Link styles */
+a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  text-decoration: none;
+  position: relative;
+  color: var(--color-text-main);
+  transition: color 0.3s ease-in-out;
+}
+
+a:not(.btn--remix)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: #008000;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+a:hover {
+  color: #2d8f4e; /* Darker green on hover */
+}
+
+a:hover::after {
+  transform: scaleX(1); /* Expands underline effect on hover */
+}
+
+/* Title style adjustments */
+.title-lg {
+  color: var(--color-text-main);
+  font-family: Minecraft;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.title-md {
+  font-size: 56px;
+}
+
+/* Layout: Home */
+.home {
+  justify-content: left;
+}
+.illo-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.illustration {
+  max-width: 160px;
+  max-height: var(--image-max-width);
+  margin-top: 1rem;
+  margin-right: 2rem;
+  transform: rotate(16deg);
+}
+
+/* Post */
+.post {
+  place-items: normal;
+}
+.postTitle {
+  font-size: 50px;
+  color: #000;
+  line-height: 0.8;
+  margin-bottom: 2rem;
+}
+.controls {
+  margin: 2rem 0 2rem;
+}
+
+.menu{
+  text-align:center;
+}
+
+/* Flex container to align both sections side by side */
+.content-wrapper {
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+/* Left Section */
+.left-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    gap: 30px;
+}
+
+/* Right Section */
+.right-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+}
+
+/* Individual sections */
+.firstcontainer, .secondcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Text content */
+.text-content {
+    flex: 0.8;
+    font-family: Minecraft, sans-serif;
+    text-align: left;
+}
+
+/* Image sections */
+.first-post, .second-post {
+    flex: 1.5;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+/* Image styles */
+.first-post img, .second-post img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.first-post img:hover, .second-post img:hover {
+    transform: scale(1.1);
+}
+
+/* Bee animation */
+.heading-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+.title-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.frog {
+    position: absolute;
+    right: -50px; 
+    top: 80%;
+    transform: translateY(-50%);
+    width: 120px; 
+    opacity: 0;
+}
+
+.title-wrapper:hover .frog {
+    animation: walk-across 4s linear forwards;
+    opacity: 1;
+}
+
+/* Frog walking animation */
+@keyframes walk-across {
+    0% {
+        right: -50px;
+        opacity: 1;
+    }
+    50% {
+        right: 50%;
+        opacity: 1;
+    }
+  85% {
+      opacity: 1;
+    }
+    100% {
+        right: 100%;
+        opacity: 0;
+    }
+}
+

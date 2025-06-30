@@ -1,0 +1,176 @@
+/******************************************************************************
+START Glitch hello-app default styles
+******************************************************************************/
+/* CSS Variables */
+:root {
+  --color-bg: #000000;
+  --color-text-main: #ffffff;
+  --color-primary: white;
+  --wrapper-height: 85vh;
+  --image-max-width: 320px;
+  --font-family: "HK Grotesk", sans-serif;
+  --font-family-header: "HK Grotesk", sans-serif;
+}
+
+/* Basic Reset & Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  background-image: url(../../cdn.glitch.global/65e77665-d478-49e2-980b-af32c9cf38d5/he-junhui-FNFBN4-GdlQ-unsplash61d9.jpg?v=1735761286640);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  color: var(--color-text-main);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+p,
+ul > li,
+ol > li {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+}
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+ul {
+  padding: 0 0 0 18px;
+  margin: 0;
+}
+ul.no-bullet {
+  list-style-type: none;
+}
+
+/* Links */
+a:not(.btn--remix) {
+  text-decoration: none;
+  color: white;
+  border-bottom: 6px solid var(--color-primary);
+  transition: background 0.2s;
+}
+a:hover {
+  background: rgba(0, 0, 0, 0.5); /* 0.5 is 50% opacity */
+}
+
+/* Button Styles */
+.btn--remix {
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-text-main);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--color-bg);
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.btn--remix img {
+  margin-right: 0.5rem;
+}
+.btn--remix:hover {
+  background-color: var(--color-text-main);
+  color: var(--color-bg);
+}
+
+/* Layout */
+.wrapper {
+  min-height: var(--wrapper-height);
+  place-items: center;
+  margin: 3rem 2rem 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid var(--color-text-main);
+}
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+}
+
+/* Illustration */
+.illo-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.illustration {
+  max-width: 120px;
+  max-height: var(--image-max-width);
+  margin-top: 1rem;
+  margin-right: 2rem;
+  transform: rotate(16deg);
+}
+
+/* Page Specific */
+.home {
+  justify-content: flex-start;
+}
+
+/* Post */
+.post {
+  min-height: var(--wrapper-height);
+  place-items: center;
+  margin: 3rem 2rem 0;
+}
+.postTitle {
+  font-size: 4rem;
+  color: black;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Oswald:wght@200..700&amp;family=Shrikhand&amp;display=swap');
+
+body {
+    font-family: 'Shrikhand', sans-serif;
+    background-color: #F3EBE6;
+    color: #5C5C5C;
+    padding: 24px;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    margin-left: 200px;
+  
+}
+
+/* Menüü paigutus vasakule */
+.menu-posts {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh; 
+    width: 100px; 
+    background: #6D6875;
+    padding: 16px;
+    text-align: center;
+}
+
+ h1{
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 auto; 
+}
+
+h2{
+  margin: 0 auto;
+}
+/*Menüüs olevad lingid */
+.menu-posts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-posts li {
+    display: block; /* Muudab menüü vertikaalseks */
+    margin-bottom: 10px;
+
+}
+
+.menu-posts a {
+    font-family: 'Alfa Slab One', serif;
+    text-decoration: none;
+    color: #F3EBE6;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+    display: block; /* Muudab lingid täislaiuseks */
+    padding: 10px;
+}
+
+.menu-posts a:hover {
+    color: white;
+    border: 3px solid #6D6875;
+    background-color: #C4B7B7;
+    border-radius: 20px;
+}
+
+/* Keskne sisu */
+.main-content {
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+.pics-of-me img{
+  width: 400px;
+  height: auto;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.pics-of-me img:hover {
+  transform: scale(2);
+}
+
+p{ 
+  display: block;
+  background: #F3EBE6;
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 90%; 
+  margin: 20px auto; 
+  line-height: 1.8; 
+  font-family: "oswald", serif;
+  font-weight: bold;
+  color: #5C5C5C;
+}
+
+

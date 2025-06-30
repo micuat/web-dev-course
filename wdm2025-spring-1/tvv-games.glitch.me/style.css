@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:"Poppins", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+*, html {
+
+    scroll-behavior: smooth !important;
+}
+
+a{
+  color: #d4c39b;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #a6997b;
+}
+
+.textbox{
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: #0e1111;
+}
+
+.tbMAIN,{
+  background: linear-gradient(2deg, #0e1111, 	#3F4F44);
+}
+
+.tbPOE{
+  background: linear-gradient(1deg, #0e1111, 	blue);
+
+}
+
+.tbTerraria{
+  background: linear-gradient(1deg, #0e1111, 	green);
+}
+
+.tbFactorio{
+  background: linear-gradient(1deg, #0e1111, 	#b87904);
+}
+
+.tbMAIN{
+  background: linear-gradient(1deg, #0e1111, 	gray);
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.slide{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: #f9e5b3;
+  scroll-snap-align: start;
+}
+.slide img{
+  width: 350px;
+}
+
+.slide h2{
+  font-size: 70;
+  font-weight: 600;
+  max-width: 650px;
+}
+
+.MAIN{
+background:
+      linear-gradient(135deg,#0000 18.75%,#6f6f6f 0 31.25%,#0000 0),
+      repeating-linear-gradient(45deg,#6f6f6f -6.25% 6.25%,#1c1c1c 0 18.75%);
+background-size: 64px 64px;
+
+
+}
+.POE{
+  background-image: url("../cdn.glitch.global/0ddae4f8-7a63-40d6-8746-2ceb454659fc/POEBGea6f.png?v=1741080960926");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.Terraria{
+  background-image: url("../cdn.glitch.global/0ddae4f8-7a63-40d6-8746-2ceb454659fc/terrariaBG3697.png?v=1741080879655");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.Factorio{
+  background-image: url("../cdn.glitch.global/0ddae4f8-7a63-40d6-8746-2ceb454659fc/factorioBG42cc.png?v=1741080251609");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

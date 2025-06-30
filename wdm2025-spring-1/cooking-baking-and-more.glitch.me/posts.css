@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Shrikhand&amp;display=swap');
+
+body {
+    font-family: 'Shrikhand', sans-serif;
+    background-color: #F3EBE6;
+    color: #5C5C5C;
+    padding: 24px;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    margin-left: 180px;
+  
+}
+
+/* Menüü paigutus vasakule */
+.menu-posts {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh; 
+    width: 100px; 
+    background: #6D6875;
+    padding: 16px;
+    text-align: center;
+}
+
+ h1{
+  font-size: 36px;
+  padding: 10px;
+}
+
+/*Menüüs olevad lingid */
+.menu-posts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-posts li {
+    display: block; /* Muudab menüü vertikaalseks */
+    margin-bottom: 10px;
+
+}
+
+.menu-posts a {
+    font-family: "Alfa Slab One", static;
+    text-decoration: none;
+    color: #F3EBE6;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+    display: block; /* Muudab lingid täislaiuseks */
+    padding: 10px;
+}
+
+.menu-posts a:hover {
+    color: white;
+    border: 3px solid #6D6875;
+    background-color: #C4B7B7;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Vahe postituste vahel */
+    justify-content: center; /* Keskendab elemendid */
+    flex-wrap: wrap; /* Väiksematel ekraanidel lähevad alla ritta */
+}
+
+.post {
+    width: 250px;
+    background: #C4B7B7;
+    padding: 15px;
+    padding-bottom: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Polaroid pilt */
+.pic {
+    width: 100%;
+    border: 5px solid #C4B7B7;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Lingid pildi all */
+.caption {
+    margin-top: 10px;
+}
+
+.caption a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-color: #6D6875;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 3px solid #6D6875;
+    transition: 0.3s ease;
+}
+
+.caption a:hover {
+    color: white;
+    border: 3px solid #6D6875;
+    background-color: #C4B7B7;
+  
+}
+
+.navigation a:hover{
+  color: white;
+  text-decoration: none; 
+}
+
+.prev {
+  font-size: 20px;
+  position: absolute;
+  text-decoration: none; 
+  color: #6d6875;
+  left: 20px;
+  top: 50px;
+}
+
+.next{
+  font-size: 20px;
+  position: absolute;
+  text-decoration: none; 
+  color: #6d6875;
+  text-align: right;
+  right: 20px;
+  top: 45px;
+}
+

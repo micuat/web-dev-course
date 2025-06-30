@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from toohottohandle.glitch.me/submission.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 14:14:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Received</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Pinyon Script', cursive;
+            background-color: #ffccda;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            color: black;
+            position: relative;
+        }
+
+        /* Centered Thank You Text */
+        .thank-you-message {
+            font-size: 3em;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards, sparkleAnimation 2s ease-in-out infinite;
+        }
+
+        /* Sparkles */
+        .sparkle {
+            position: absolute;
+            color: hotpink;
+            font-size: 1.5em;
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards, sparkleTwinkle 1.5s infinite ease-in-out;
+        }
+
+        /* Fade in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Random sparkle twinkle */
+        @keyframes sparkleTwinkle {
+            0%, 100% { opacity: 0.2; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+        
+        /* Sparkle Animation to create a subtle pulsing effect */
+        @keyframes sparkleAnimation {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Thank You Message -->
+    <div class="thank-you-message">Thank You For Your Submission</div>
+
+    <!-- Sparkles around the text -->
+    <div class="sparkle" style="top: 20%; left: 10%;">✨</div>
+    <div class="sparkle" style="top: 30%; left: 80%;">✨</div>
+    <div class="sparkle" style="top: 60%; left: 25%;">✨</div>
+    <div class="sparkle" style="top: 70%; left: 70%;">✨</div>
+    <div class="sparkle" style="top: 50%; left: 50%;">✨</div>
+    <div class="sparkle" style="top: 40%; left: 15%;">✨</div>
+
+    <!-- Sparkle Sound Effect -->
+    <audio id="sparkle-sound" autoplay>
+        <source src="sparkle.html" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Play sparkle sound effect when the page loads
+        window.onload = function() {
+            const sparkleSound = document.getElementById('sparkle-sound');
+            sparkleSound.play().catch(error => {
+                console.error("Sound could not be played automatically:", error);
+            });
+        };
+    </script>
+</body>
+
+<!-- Mirrored from toohottohandle.glitch.me/submission.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 14:14:47 GMT -->
+</html>

@@ -1,0 +1,396 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #D7F5EF;
+  --color-text-main: #000000;
+  --color-text-header: #2800FF;
+  --color-primary: #AFECE0;
+  --wrapper-height: 85vh;
+  --image-max-width: 320px;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+/* Import a stylish Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;family=Quicksand:wght@400;600&amp;display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+
+/* Navigation grid */
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(225, 210, 190, 0.9);
+  padding: 0.8rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); 
+}
+
+/* navigation list */
+.nav-links {
+  display: flex;
+  gap: 2rem; 
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+/* link styles */
+.nav-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #444444;
+  padding: 0.5rem 1rem; 
+  border-radius: 6px;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #a48ad4; 
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  background: rgba(225, 210, 190, 0.9);
+  font-size: 1rem;
+  color: #333333;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.01);
+}
+
+.cat-image {
+  display: block;
+  max-width: 30%;
+  height: auto;
+  margin: 2rem auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.post-image {
+  display: block;
+  max-width: 70%;
+  height: auto;
+  margin: 2rem auto;
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+  .cat-image {
+    max-width: 50%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .cat-image {
+    max-width: 60%; 
+  }
+}
+
+
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+/* Page structure */
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  background: linear-gradient(to bottom, #F7F1EB, #EADDC8);
+  color: #5B4636;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  min-height: var(--wrapper-height);
+  place-items: center;
+  margin: 3rem 2rem 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* Typography */
+
+p {
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #444444; 
+  max-width: 900px;
+  margin: 1rem auto;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2rem 0 .8rem;
+  font-family: var(--font-family-header);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--color-text-main);
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #52489C; 
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  max-width: 900px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+ul > li,
+ol > li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+ul {
+  padding: 0 0 0 18px;
+  margin: 0;
+}
+ul.no-bullet {
+  list-style-type: none;
+}
+
+/* Link styles */
+/* General Link Styling (For Post Links & Regular Links) */
+a:not(.nav-links li a):not(.btn--remix):link,
+a:not(.nav-links li a):not(.btn--remix):visited {
+  text-decoration: none;
+  color: #52489C; 
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect for Post Links */
+a:not(.nav-links li a):hover {
+  color: #f4a261 !important; 
+  text-decoration: underline !important; 
+  text-underline-offset: 3px; 
+}
+
+
+
+/* Title style adjustments */
+.title-lg {
+  color: var(--color-text-main);
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.title-md {
+  font-size: 56px;
+}
+
+/* Layout: Home */
+.home {
+  justify-content: left;
+}
+
+.homepage-text {
+  text-align: left;
+  max-width: 900px; 
+  margin: 1.5rem auto;
+  line-height: 1.6;
+}
+
+/* About Page Styling */
+.about-container {
+  max-width: 900px; 
+  margin: 2rem auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* 🏠 General Content Styling for Blog Posts & Quiz */
+.blog-container, .about-container, .post-container {
+  max-width: 900px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.quiz-intro, .quiz-form {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444444;
+    max-width: 900px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+
+/* 📌 Blog Post Title & Quiz Title Consistency */
+.blog-container h1, .quiz-title, .about-container h1, .post-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  color: #52489C;
+  margin-bottom: 20px;
+}
+
+/* 📌 Blog Post Subheadings & Quiz Headings */
+.blog-container h2, .about-container h2, .post-container h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5B4636;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(225, 210, 190, 0.9);
+  text-align: left;
+}
+
+/* ✍️ Paragraph Text for Blog and Quiz */
+.blog-container p, .quiz-intro, .about-container p, .post-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 15px 0;
+  text-align: left;
+  max-width: 900px;
+}
+
+/* 🔹 List Styling */
+.blog-container ul, .quiz-question, .about-container ul, .post-container ul {
+  text-align: left;
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+/* 🔹 List Items */
+.blog-container li, .quiz-question li, .about-container li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+/* 🔹 Center Horizontal Line */
+.blog-container hr, .quiz-form hr, .about-container hr, .post-container hr {
+  border: none;
+  border-top: 2px dashed rgba(225, 210, 190, 0.9);
+  width: 80%;
+  margin: 30px auto;
+}
+
+/* 🐾 Quiz Button Styles */
+.quiz-button {
+  display: inline-block;
+  background-color: var(--color-hover);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 15px;
+  border: 2px solid var(--color-hover);
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-button:hover {
+  background-color: white;
+  color: var(--color-hover);
+  transform: scale(1.0);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-button:active {
+  transform: scale(0.98);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+
+
+/* Headings Styling */
+.about-container h1, .about-container h2 {
+  color: #52489C;
+  margin-bottom: 1rem;
+}
+
+/* List Styling */
+.about-container ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph Styling */
+.about-container p {
+  margin-bottom: 1.2rem;
+}
+

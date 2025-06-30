@@ -1,0 +1,54 @@
+HTTrack3.49-2 launched on Mon, 30 Jun 2025 16:09:08 at https://julia-travel.glitch.me/ https://gaming-blog.glitch.me/ https://disc-golf-themed-blog.glitch.me/ https://vaiko-loves-music.glitch.me/ https://handicraft-gallery.glitch.me/ https://estonian-folk-dance.glitch.me/ https://cooking-baking-and-more.glitch.me/ https://japanese-onomatopoeia.glitch.me/ https://tournament-archive.glitch.me/ https://tvv-games.glitch.me/ https://femalegamers.glitch.me https://dylan-and-animals.glitch.me/ https://zealous-elderly-hide.glitch.me https://design-testblog.glitch.me/ https://purrfect-blog.glitch.me/ https://my-mc-blog.glitch.me/ https://tournament-blog.glitch.me/ https://my-hobby-blog.glitch.me https://kats-sports-blog.glitch.me/ https://hobby-garden-site.glitch.me https://beatmaking-blog.glitch.me https://czech-learning-page.glitch.me https://zodiac-signs-by-minni.glitch.me/ +cdn.glitch.global* +cdn.glitch.com*
+(httrack https://julia-travel.glitch.me/ https://gaming-blog.glitch.me/ https://disc-golf-themed-blog.glitch.me/ https://vaiko-loves-music.glitch.me/ https://handicraft-gallery.glitch.me/ https://estonian-folk-dance.glitch.me/ https://cooking-baking-and-more.glitch.me/ https://japanese-onomatopoeia.glitch.me/ https://tournament-archive.glitch.me/ https://tvv-games.glitch.me/ https://femalegamers.glitch.me https://dylan-and-animals.glitch.me/ https://zealous-elderly-hide.glitch.me https://design-testblog.glitch.me/ https://purrfect-blog.glitch.me/ https://my-mc-blog.glitch.me/ https://tournament-blog.glitch.me/ https://my-hobby-blog.glitch.me https://kats-sports-blog.glitch.me/ https://hobby-garden-site.glitch.me https://beatmaking-blog.glitch.me https://czech-learning-page.glitch.me https://zodiac-signs-by-minni.glitch.me/ - +cdn.glitch.global* +cdn.glitch.com* -r6 )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:09:10	Warning: 	Found for https://julia-travel.glitch.me/robots.txt
+16:09:10	Warning: 	File has moved from https://julia-travel.glitch.me/robots.txt to /
+16:09:21	Warning: 	Found for https://gaming-blog.glitch.me/robots.txt
+16:09:21	Warning: 	File has moved from https://gaming-blog.glitch.me/robots.txt to /
+16:09:27	Warning: 	Found for https://disc-golf-themed-blog.glitch.me/robots.txt
+16:09:27	Warning: 	File has moved from https://disc-golf-themed-blog.glitch.me/robots.txt to /
+16:09:32	Warning: 	Found for https://vaiko-loves-music.glitch.me/robots.txt
+16:09:32	Warning: 	File has moved from https://vaiko-loves-music.glitch.me/robots.txt to /
+16:09:39	Warning: 	Found for https://handicraft-gallery.glitch.me/robots.txt
+16:09:39	Warning: 	File has moved from https://handicraft-gallery.glitch.me/robots.txt to /
+16:09:49	Warning: 	Found for https://estonian-folk-dance.glitch.me/robots.txt
+16:09:49	Warning: 	File has moved from https://estonian-folk-dance.glitch.me/robots.txt to /
+16:10:08	Warning: 	Found for https://japanese-onomatopoeia.glitch.me/robots.txt
+16:10:08	Warning: 	File has moved from https://japanese-onomatopoeia.glitch.me/robots.txt to /
+16:10:13	Warning: 	Found for https://tournament-archive.glitch.me/robots.txt
+16:10:13	Warning: 	File has moved from https://tournament-archive.glitch.me/robots.txt to /
+16:10:24	Warning: 	Found for https://femalegamers.glitch.me/robots.txt
+16:10:24	Warning: 	File has moved from https://femalegamers.glitch.me/robots.txt to /
+16:10:29	Warning: 	Found for https://dylan-and-animals.glitch.me/robots.txt
+16:10:29	Warning: 	File has moved from https://dylan-and-animals.glitch.me/robots.txt to /
+16:10:33	Warning: 	Found for https://zealous-elderly-hide.glitch.me/robots.txt
+16:10:33	Warning: 	File has moved from https://zealous-elderly-hide.glitch.me/robots.txt to /
+16:10:42	Warning: 	Found for https://design-testblog.glitch.me/robots.txt
+16:10:42	Warning: 	File has moved from https://design-testblog.glitch.me/robots.txt to /
+16:10:48	Warning: 	Found for https://purrfect-blog.glitch.me/robots.txt
+16:10:48	Warning: 	File has moved from https://purrfect-blog.glitch.me/robots.txt to /
+16:10:52	Warning: 	Found for https://my-mc-blog.glitch.me/robots.txt
+16:10:52	Warning: 	File has moved from https://my-mc-blog.glitch.me/robots.txt to /
+16:10:58	Warning: 	Found for https://tournament-blog.glitch.me/robots.txt
+16:10:58	Warning: 	File has moved from https://tournament-blog.glitch.me/robots.txt to /
+16:11:02	Warning: 	Found for https://my-hobby-blog.glitch.me/robots.txt
+16:11:02	Warning: 	File has moved from https://my-hobby-blog.glitch.me/robots.txt to /
+16:11:07	Warning: 	Found for https://kats-sports-blog.glitch.me/robots.txt
+16:11:07	Warning: 	File has moved from https://kats-sports-blog.glitch.me/robots.txt to /
+16:11:13	Warning: 	Found for https://hobby-garden-site.glitch.me/robots.txt
+16:11:13	Warning: 	File has moved from https://hobby-garden-site.glitch.me/robots.txt to /
+16:11:17	Warning: 	Found for https://beatmaking-blog.glitch.me/robots.txt
+16:11:17	Warning: 	File has moved from https://beatmaking-blog.glitch.me/robots.txt to /
+16:11:23	Warning: 	Found for https://zodiac-signs-by-minni.glitch.me/robots.txt
+16:11:23	Warning: 	File has moved from https://zodiac-signs-by-minni.glitch.me/robots.txt to /
+16:15:52	Error: 	"Forbidden" (403) at link https://cdn.glitch.global/0d320623-0dcd-4859-a2d4-99616c17b1ab/giphy (1 (from https://femalegamers.glitch.me/posts/trends/)
+16:15:52	Error: 	"Forbidden" (403) at link https://cdn.glitch.global/0d320623-0dcd-4859-a2d4-99616c17b1ab/giphy (4 (from https://femalegamers.glitch.me/posts/firstPost/)
+16:15:52	Error: 	"Forbidden" (403) at link https://cdn.glitch.global/0d320623-0dcd-4859-a2d4-99616c17b1ab/giphy (5 (from https://femalegamers.glitch.me/posts/letsplay/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 6 minutes 44 seconds : 516 links scanned, 489 files written (459200486 bytes overall) [459577895 bytes received at 1137569 bytes/sec], 2.6 requests per connection
+(3 errors, 40 warnings, 0 messages)

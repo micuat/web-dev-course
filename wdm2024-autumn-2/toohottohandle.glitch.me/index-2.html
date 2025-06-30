@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from toohottohandle.glitch.me/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 14:14:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Too Hot To Handle: Online Meet & Greet Giveaway</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffccda;
+            color: black;
+            text-align: center;
+            padding: 0 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 20px;
+            animation: slideUp 0.5s ease forwards;
+        }
+
+        h1 .hot {
+            color: hotpink;
+        }
+
+        /* Sparkling Banner */
+        .banner {
+            color: black;
+            background-color: hotpink;
+            padding: 15px 20px;
+            font-weight: bold;
+            margin: 10px 0;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5em;
+            animation: fadeIn 1s ease-in forwards, flicker 0.5s alternate 5;
+        }
+        .banner::before,
+        .banner::after {
+            content: "✨";
+            margin: 0 5px;
+        }
+
+        /* Top Images */
+        .top-right-img, .top-left-img {
+            position: absolute;
+            width: 90px;
+            height: auto;
+            border-radius: 10px;
+            animation: slideUp 0.5s ease forwards;
+        }
+        .top-right-img {
+            top: 5px;
+            right: 20px;
+        }
+        .top-left-img {
+            top: 10px;
+            left: 20px;
+            width: 110px;
+        }
+
+        /* Containers and Boxes */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px;
+            animation: slideUp 0.5s ease forwards;
+        }
+        .box {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            width: 30%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: slideUp 0.5s ease forwards;
+        }
+        .subtitle {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .hotpink-text {
+            color: hotpink;
+        }
+        .participation-text, .meet-greet-text {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        /* Submission Form */
+        .submission-form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            animation: slideUp 0.5s ease forwards;
+        }
+        .submission-form textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            resize: none;
+            margin-bottom: 10px;
+        }
+        .submit-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: hotpink;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* New Submission Form Images */
+        .submission-images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .submission-images img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation Buttons */
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 500px;
+            margin-top: 20px;
+            animation: slideUp 0.5s ease forwards;
+        }
+        .form-buttons a {
+            background-color: hotpink;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            flex: 1;
+            text-align: center;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        /* Trailer Link */
+        .trailer-link {
+            color: hotpink;
+            margin-top: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Trailer Image */
+        .trailer-image {
+            margin-top: 10px;
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+        .trailer-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes flicker {
+            0% { color: black; }
+            100% { color: white; }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Title -->
+    <h1>Too <span class="hot">Hot</span> To Handle: Online Meet & Greet Giveaway</h1>
+
+    <!-- Sparkling Submission Banner -->
+    <div class="banner">SEND YOUR SUBMISSIONS RIGHT NOW FOR EXCLUSIVE MEET & GREETS WITH CAST MEMBERS</div>
+
+    <!-- Top Left and Right Images -->
+    <img src="../cdn.glitch.global/89647dde-3a08-4b9c-959e-5a51a99f2c4e/download-187b5.png?v=1730215278390" alt="Too Hot To Handle" class="top-left-img">
+    <img src="../cdn.glitch.global/89647dde-3a08-4b9c-959e-5a51a99f2c4e/download171a.png?v=1730215287026" alt="Too Hot To Handle" class="top-right-img">
+
+    <div class="container">
+        <!-- Left Section with Participation Details -->
+        <div class="box">
+            <h2 class="subtitle">Participation</h2>
+            <p class="participation-text">
+                Want to meet your favorites from "Too Hot To Handle"? To participate in the exclusive "Too Hot To Handle" cast meet & greet, there are only 3 things you must do.
+            </p>
+            <p class="hotpink-text">
+                1. Be an active Netflix subscriber<br>
+                2. Follow Netflix on TikTok & Instagram<br>
+                3. Write in the submission form why you should be the one to win this meet & greet and who you are most excited to meet.
+            </p>
+        </div>
+
+        <!-- Center Section with Submission Form -->
+        <div class="box submission-form" id="form-container">
+            <h2 class="subtitle">Submission Form</h2>
+            <textarea placeholder="Type your submission here..."></textarea>
+            <button class="submit-button" onclick="window.location.href='submission.html'">Send Submission</button>
+            
+            <!-- New Images in Submission Form -->
+            <div class="submission-images">
+                <img src="../cdn.glitch.global/89647dde-3a08-4b9c-959e-5a51a99f2c4e/flavia-66aba8126f54982a2.png?v=1730661970194" alt="Flavia">
+                <img src="../cdn.glitch.global/89647dde-3a08-4b9c-959e-5a51a99f2c4e/allTHTH6season6charactersocialart-Bri9x16vrgbevergreen-eea9c20eb31.jpg?v=1730661947118" alt="Season Cast">
+            </div>
+        </div>
+
+        <!-- Right Section with Meet & Greet Details -->
+        <div class="box">
+            <h2 class="subtitle">What Is The Online "Too Hot To Handle" Meet & Greet?</h2>
+            <p class="meet-greet-text">
+                The "Too Hot To Handle" meet & greet is a possibility to 
+                <span class="hotpink-text">meet your favorites</span> from the show, get 
+                <span class="hotpink-text">exclusive insights</span>, 
+                <span class="hotpink-text">ask any questions</span> you have, and make a 
+                <span class="hotpink-text">social media post</span> with your favorite cast member.
+            </p>
+        </div>
+    </div>
+
+    <!-- Bottom Buttons for FAQ and Previous Meet & Greet Experiences -->
+    <div class="form-buttons">
+        <a href="frequentquestions.html">FAQ</a>
+        <a href="meet.html">Previous Meet & Greet Experiences</a>
+    </div>
+
+    <!-- Trailer Link and Image -->
+    <p class="trailer-link" onclick="window.open('https://www.youtube.com/watch?v=lPl-sGzH6y8', '_blank')">Watch season 6 trailer right here</p>
+
+    <img src="../cdn.glitch.global/89647dde-3a08-4b9c-959e-5a51a99f2c4e/Screenshot%202024-11-04%20at%2000.21.1409f9.png?v=1730672535950" alt="Season 6 Trailer" class="trailer-image" onclick="window.open('https://www.youtube.com/watch?v=lPl-sGzH6y8', '_blank')">
+<style>
+    /* Other existing styles */
+
+    /* Trailer Image */
+    .trailer-image {
+        margin-top: 10px;
+        width: 150px; /* Adjusted width to make the image smaller */
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease;
+    }
+    .trailer-image:hover {
+        transform: scale(1.05);
+    }
+</style>
+</body>
+
+<!-- Mirrored from toohottohandle.glitch.me/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 14:14:57 GMT -->
+</html>

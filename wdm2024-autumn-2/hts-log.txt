@@ -1,0 +1,32 @@
+HTTrack3.49-2 launched on Mon, 30 Jun 2025 17:10:40 at https://star-able-balmoral.glitch.me/ https://aleksander-ojamets.glitch.me/ https://marketing-website-iryna.glitch.me/ https://placeholder-final-web.glitch.me/ https://caseys-art-portfolio.glitch.me/ https://spectacled-tourmaline-sea.glitch.me/ https://flannel-tabby-hexagon.glitch.me/ https://blind-mind-project.glitch.me/ https://explorekyivolha.glitch.me/ https://goodvibezrunningcamp.glitch.me/ https://nebula-wholesale-pruner.glitch.me/ https://ossukee-portfolio.glitch.me/ https://pianist-for-hire.glitch.me/ https://andriis-blog-updated.glitch.me/ https://carbonated-super-maraca.glitch.me/ https://toohottohandle.glitch.me/ https://salt-ninth-femur.glitch.me/ +cdn.glitch.global* +cdn.glitch.com*
+(httrack https://star-able-balmoral.glitch.me/ https://aleksander-ojamets.glitch.me/ https://marketing-website-iryna.glitch.me/ https://placeholder-final-web.glitch.me/ https://caseys-art-portfolio.glitch.me/ https://spectacled-tourmaline-sea.glitch.me/ https://flannel-tabby-hexagon.glitch.me/ https://blind-mind-project.glitch.me/ https://explorekyivolha.glitch.me/ https://goodvibezrunningcamp.glitch.me/ https://nebula-wholesale-pruner.glitch.me/ https://ossukee-portfolio.glitch.me/ https://pianist-for-hire.glitch.me/ https://andriis-blog-updated.glitch.me/ https://carbonated-super-maraca.glitch.me/ https://toohottohandle.glitch.me/ https://salt-ninth-femur.glitch.me/ - +cdn.glitch.global* +cdn.glitch.com* -r6 )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+17:10:51	Warning: 	Found for https://aleksander-ojamets.glitch.me/robots.txt
+17:10:51	Warning: 	File has moved from https://aleksander-ojamets.glitch.me/robots.txt to /
+17:11:05	Warning: 	Found for https://placeholder-final-web.glitch.me/robots.txt
+17:11:05	Warning: 	File has moved from https://placeholder-final-web.glitch.me/robots.txt to /
+17:11:22	Warning: 	Found for https://caseys-art-portfolio.glitch.me/robots.txt
+17:11:22	Warning: 	File has moved from https://caseys-art-portfolio.glitch.me/robots.txt to /
+17:11:44	Warning: 	Found for https://blind-mind-project.glitch.me/robots.txt
+17:11:44	Warning: 	File has moved from https://blind-mind-project.glitch.me/robots.txt to /
+17:12:56	Warning: 	Found for https://goodvibezrunningcamp.glitch.me/robots.txt
+17:12:56	Warning: 	File has moved from https://goodvibezrunningcamp.glitch.me/robots.txt to /
+17:13:09	Warning: 	Found for https://pianist-for-hire.glitch.me/robots.txt
+17:13:09	Warning: 	File has moved from https://pianist-for-hire.glitch.me/robots.txt to /
+17:13:14	Warning: 	Found for https://andriis-blog-updated.glitch.me/robots.txt
+17:13:14	Warning: 	File has moved from https://andriis-blog-updated.glitch.me/robots.txt to /
+17:13:32	Warning: 	Found for https://salt-ninth-femur.glitch.me/robots.txt
+17:13:32	Warning: 	File has moved from https://salt-ninth-femur.glitch.me/robots.txt to /
+17:13:59	Error: 	"Forbidden" (403) at link https://cdn.glitch.global/32c180bc-6721-4d71-9bd7-c61a1682f689/_ (12 (from https://marketing-website-iryna.glitch.me/)
+17:14:53	Error: 	"Not Found" (404) at link https://marketing-website-iryna.glitch.me/background-placeholder.jpg (from https://marketing-website-iryna.glitch.me/style.css)
+17:14:53	Error: 	"Forbidden" (403) at link https://cdn.glitch.global/32c180bc-6721-4d71-9bd7-c61a1682f689/_ (11 (from https://marketing-website-iryna.glitch.me/style.css)
+17:14:53	Error: 	"Not Found" (404) at link https://marketing-website-iryna.glitch.me/about-bg.jpg (from https://marketing-website-iryna.glitch.me/about-me.html)
+17:14:57	Error: 	"Not Found" (404) at link https://toohottohandle.glitch.me/sparkle.mp3 (from https://toohottohandle.glitch.me/submission.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 minutes 17 seconds : 265 links scanned, 242 files written (174595451 bytes overall) [174825067 bytes received at 680253 bytes/sec], 2.2 requests per connection
+(5 errors, 16 warnings, 0 messages)

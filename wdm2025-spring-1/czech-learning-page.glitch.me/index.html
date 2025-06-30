@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from czech-learning-page.glitch.me/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 13:11:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Learn Czech</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background: rgba(255 255 255 / 0.85);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    letter-spacing: 0.05em;
+  }
+  nav {
+    background: rgba(255 255 255 / 0.75);
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 0.1);
+  }
+  nav button {
+    background: #3498db;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgb(52 152 219 / 0.4);
+  }
+  nav button:hover, nav button.active {
+    background: #1d6fa5;
+    box-shadow: 0 6px 10px rgb(29 111 165 / 0.6);
+  }
+  main {
+    flex-grow: 1;
+    max-width: 720px;
+    margin: 2rem auto 3rem auto;
+    background: rgba(255 255 255 / 0.9);
+    padding: 2rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+    line-height: 1.6;
+  }
+  h1,h2 {
+    color: #2c3e50;
+  }
+  ul {
+    padding-left: 1.2rem;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .lesson-list li {
+    margin-bottom: 0.7rem;
+  }
+  .phrase {
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    background-color: #e1f5fe;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #0277bd;
+  }
+  .translation {
+    font-style: italic;
+    color: #555;
+    margin-left: 1rem;
+  }
+  img.lesson-img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 1rem 0;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 0.1);
+    display: block;
+  }
+  button.quiz-button {
+    background: #e91e63;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button.quiz-button:hover {
+    background: #c2185b;
+  }
+  .quiz-result {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  @media (max-width: 480px) {
+    nav {
+      gap: 0.8rem;
+    }
+    nav button {
+      padding: 0.5rem 0.9rem;
+      font-size: 0.9rem;
+    }
+    main {
+      margin: 1rem 1rem 2rem 1rem;
+      padding: 1.5rem 1.8rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>Learn Czech Language</header>
+<nav>
+  <button id="btn-main" class="active" onclick="showPage('main')">Home</button>
+  <button id="btn-lesson1" onclick="showPage('lesson1')">Lesson 1</button>
+  <button id="btn-lesson2" onclick="showPage('lesson2')">Lesson 2</button>
+</nav>
+<!-- The <head> section remains unchanged -->
+
+<!-- Inside the <main> tag -->
+<main id="content">
+  <section id="main" class="page">
+    <h1>Welcome to Learn Czech!</h1>
+    <p>Start your journey to learning basic Czech with easy lessons. Use the navigation buttons above to go to Lesson 1 and Lesson 2.</p>
+    <h2>Why Learn Czech?</h2>
+    <ul class="lesson-list">
+      <li>Beautiful and rich language spoken by over 10 million people.</li>
+      <li>Gain deeper cultural understanding of the Czech Republic.</li>
+      <li>Enhance your travel experiences in Central Europe.</li>
+      <li>Boost your language skills and cognitive abilities.</li>
+    </ul>
+    <p>Let’s get started and have fun!</p>
+  </section>
+
+  <section id="lesson1" class="page" style="display:none;">
+    <h1>Lesson 1: Basic Greetings</h1>
+    <p>Learning how to greet others is the first step in becoming comfortable in any language. Czech has both formal and informal ways to say "hello," "goodbye," and other common phrases. These will help you start conversations and make a good impression.</p>
+
+    <div class="phrase"><strong>Ahoj</strong> <span class="translation">- Hello / Hi (informal)</span></div>
+    <div class="phrase"><strong>Dobrý den</strong> <span class="translation">- Good day (formal)</span></div>
+    <div class="phrase"><strong>Nashledanou</strong> <span class="translation">- Goodbye (formal)</span></div>
+    <div class="phrase"><strong>Děkuji</strong> <span class="translation">- Thank you</span></div>
+    <div class="phrase"><strong>Prosím</strong> <span class="translation">- Please / You’re welcome</span></div>
+
+    <h2>Example Conversations</h2>
+    <p><em>Jane:</em> <strong>Ahoj! Jak se máš?</strong> (Hey! How are you?)</p>
+    <p><em>Tomáš:</em> <strong>Dobrý den, mám se dobře, děkuji.</strong> (Good day, I’m well, thank you.)</p>
+
+    <h2>Quick Tips</h2>
+    <ul class="lesson-list">
+      <li><strong>"Ahoj"</strong> is used among friends, family, and people your own age.</li>
+      <li><strong>"Dobrý den"</strong> is more polite and used in professional or formal settings.</li>
+      <li><strong>"Prosím"</strong> can be a response to "thank you" or used to politely ask for something.</li>
+    </ul>
+
+    <div class="quiz-question">Quiz 1: What’s the polite way to say “Hello”?</div>
+    <form id="quiz1-form">
+      <label><input type="radio" name="q1" value="wrong"> Ahoj</label><br/>
+      <label><input type="radio" name="q1" value="correct"> Dobrý den</label><br/>
+      <label><input type="radio" name="q1" value="wrong"> Nashledanou</label><br/>
+      <button type="button" class="quiz-button" onclick="checkQuiz('quiz1-form', 'quiz1-result')">Check Answer</button>
+    </form>
+    <div id="quiz1-result" class="quiz-result" aria-live="polite"></div>
+
+    <div class="quiz-question">Quiz 2: What does “Prosím” mean?</div>
+    <form id="quiz1b-form">
+      <label><input type="radio" name="q1b" value="correct"> Please / You’re welcome</label><br/>
+      <label><input type="radio" name="q1b" value="wrong"> Goodbye</label><br/>
+      <label><input type="radio" name="q1b" value="wrong"> Good night</label><br/>
+      <button type="button" class="quiz-button" onclick="checkQuiz('quiz1b-form', 'quiz1b-result')">Check Answer</button>
+    </form>
+    <div id="quiz1b-result" class="quiz-result" aria-live="polite"></div>
+  </section>
+
+  <section id="lesson2" class="page" style="display:none;">
+    <h1>Lesson 2: Numbers 1 to 10</h1>
+    <p>Being able to count is very useful in real-life situations: ordering food, shopping, asking for directions, or telling time. Let’s learn the numbers from 1 to 10 in Czech!</p>
+
+    <ul class="lesson-list">
+      <li><strong>Jedna</strong> - One</li>
+      <li><strong>Dva</strong> - Two</li>
+      <li><strong>Tři</strong> - Three</li>
+      <li><strong>Čtyři</strong> - Four</li>
+      <li><strong>Pět</strong> - Five</li>
+      <li><strong>Šest</strong> - Six</li>
+      <li><strong>Sedm</strong> - Seven</li>
+      <li><strong>Osm</strong> - Eight</li>
+      <li><strong>Devět</strong> - Nine</li>
+      <li><strong>Deset</strong> - Ten</li>
+    </ul>
+
+    <h2>Practice Sentences</h2>
+    <p><strong>Kolik je to jablek?</strong> (How many apples is that?)</p>
+    <p><strong>To jsou dvě jablka.</strong> (Those are two apples.)</p>
+    <p><strong>Máme pět knih.</strong> (We have five books.)</p>
+
+    <h2>Fun Fact</h2>
+    <p>The Czech language includes a unique sound “ř” as in the word “tři” (three), which does not exist in many other languages and can be tricky to pronounce. Don’t worry — it gets easier with practice!</p>
+
+    <div class="quiz-question">Quiz 1: What is "four" in Czech?</div>
+    <form id="quiz2-form">
+      <label><input type="radio" name="q2" value="wrong"> Tři</label><br/>
+      <label><input type="radio" name="q2" value="correct"> Čtyři</label><br/>
+      <label><input type="radio" name="q2" value="wrong"> Pět</label><br/>
+      <button type="button" class="quiz-button" onclick="checkQuiz('quiz2-form', 'quiz2-result')">Check Answer</button>
+    </form>
+    <div id="quiz2-result" class="quiz-result" aria-live="polite"></div>
+
+    <div class="quiz-question">Quiz 2: Which number is “Devět”?</div>
+    <form id="quiz2b-form">
+      <label><input type="radio" name="q2b" value="wrong"> Seven</label><br/>
+      <label><input type="radio" name="q2b" value="wrong"> Ten</label><br/>
+      <label><input type="radio" name="q2b" value="correct"> Nine</label><br/>
+      <button type="button" class="quiz-button" onclick="checkQuiz('quiz2b-form', 'quiz2b-result')">Check Answer</button>
+    </form>
+    <div id="quiz2b-result" class="quiz-result" aria-live="polite"></div>
+  </section>
+</main>
+
+<footer>© 2024 Learn Czech. Made with ❤️</footer>
+<script>
+  function showPage(pageId) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(p => {
+      p.style.display = p.id === pageId ? 'block' : 'none';
+    });
+    const buttons = document.querySelectorAll('nav button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    const activeBtn = document.getElementById('btn-' + (pageId === 'main' ? 'main' : pageId.replace('lesson', 'lesson')));
+    if (activeBtn) activeBtn.classList.add('active');
+    clearQuizResults();
+  }
+
+  function checkQuiz(formId, resultId) {
+    const form = document.getElementById(formId);
+    const result = document.getElementById(resultId);
+    const selected = form.querySelector('input[type="radio"]:checked');
+    if(!selected){
+      result.textContent = 'Please select an answer!';
+      result.style.color = '#d32f2f';
+      return;
+    }
+    if(selected.value === 'correct'){
+      result.textContent = 'Correct! 🎉 Great job!';
+      result.style.color = '#388e3c';
+    } else {
+      result.textContent = 'Oops! That’s not quite right. Try again.';
+      result.style.color = '#d32f2f';
+    }
+  }
+
+  function clearQuizResults(){
+    const results = document.querySelectorAll('.quiz-result');
+    results.forEach(r => {
+      r.textContent = '';
+    });
+    const forms = document.querySelectorAll('form');
+    forms.forEach(f => {
+      f.reset();
+    });
+  }
+</script>
+</body>
+
+<!-- Mirrored from czech-learning-page.glitch.me/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jun 2025 13:11:22 GMT -->
+</html>
+

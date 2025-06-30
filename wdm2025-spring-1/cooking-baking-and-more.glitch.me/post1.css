@@ -1,0 +1,134 @@
+
+/* Pealkiri */
+h1 {
+  font-size: 2.5rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #6d6875;
+}
+
+/* Pildid ilusasti üles */
+.container1 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: -565px;
+}
+
+.container1 img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transform-origin: center top;
+}
+
+.container1 img:hover {
+  transform: scale(2);
+}
+
+.container2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: -425px;
+}
+
+.container2 img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transform-origin: center top;
+}
+
+.container2 img:hover {
+  transform: scale(2);
+}
+
+
+.container3 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: -445px;
+}
+
+.container3 img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transform-origin: center top;
+}
+
+.container3 img:hover {
+  transform: scale(2);
+}
+
+/* Koostisosade nimekiri ilusaks */
+.food-list {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin-left: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.food-list p {
+  margin-right: 30px;
+  font-size: 1.4rem;
+  color: #6d6875;
+  margin-bottom: 10px;
+}
+
+.food-list label {
+  font-family: "Alfa Slab One", serif;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  font-size: 1rem;
+}
+
+.food-list input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.activity-description {
+  width: 50%;
+  margin-left: 110px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 69px;
+  text-align: left;
+}
+
+.activity-description h2 {
+  text-align: center;
+  color: #6d6875;
+}
+
+.activity-description p {
+  font-family: "Alfa Slab One", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 5px 0;
+  border-left: 4px solid #b5838d;
+  padding-left: 10px;
+}
+
+
+input[type="checkbox"] {
+  accent-color: black;
+  width: 20px;
+  height: 20px;
+}

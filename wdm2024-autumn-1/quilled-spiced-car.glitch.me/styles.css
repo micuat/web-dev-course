@@ -1,0 +1,202 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #fefce5;
+  --color-text-main: #000000;
+  --color-primary: #ffff00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "Iowan Old Style", "Arial", sanserif;
+  --font-family-header: "Iowan Old Style", "Arial", sanserif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/* Our remix on glitch button */
+.btn--remix {
+  font-family: var(--font-family);
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: center;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000000;
+  white-space: nowrap;
+  margin-left: auto;
+}
+.btn--remix img {
+  margin-right: 0.5rem;
+}
+.btn--remix:hover {
+  background-color: #d0fff1;
+}
+
+
+header ul {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+header ul a {
+  text-decoration: none;
+  color: var(--color-text-main);
+}
+
+header ul a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #ffffff;
+}
+
+.footer a:hover {
+  background: var(--color-primary);
+}
+
+a:not(.btn--remix):visited,
+.footer a:not(.btn--remix):link {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #000000;
+  text-decoration: none;
+  border-style: none;
+}
+
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*three columns */
+  gap: 20px; /* distance beweet elements */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%; /* image width - 100% of container width */
+  max-width: var(--image-max-width); /* max width limit */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gallery-item h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  padding: 32px 50px;
+}
+
+.title {
+  color: #2800ff;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+  margin: 0;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+.illustration:active {
+  transform: translateY(5px);
+}
+
+.dipped {
+  transform: translateY(5px);
+}
+
+.fileopener {
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 3px solid var(--color-primary);
+  color: var(--color-secondary);
+}
+.fileopener:hover {
+  border-bottom: 3px solid var(--color-secondary);
+}
