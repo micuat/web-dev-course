@@ -1,0 +1,40 @@
+HTTrack3.49-2 launched on Sat, 05 Jul 2025 16:12:58 at +cdn.glitch.global* +cdn.glitch.com* https://lepisto-professional-portfolio.glitch.me/ https://anabels-portfolio2.glitch.me/ https://vaiko-portfolio.glitch.me/ https://chimerical-muffin-e2987d.netlify.app/ https://portfolio-try1.glitch.me/ https://evelin-portfolio.glitch.me/ https://angelina-portfolio-blog.glitch.me/ https://blue-portfolio.glitch.me/ https://ralf-portfolio.glitch.me/ https://kerli-portfolio.glitch.me/ https://www.tlu.ee/~nkdsnake/webdesignproject/main.html https://modular-portfolio.glitch.me https://photo-portfolio-graphy.glitch.me/ https://portfolio-lm.glitch.me/ https://cooly-portfolio.glitch.me/ https://japanese-learning-guide.glitch.me/ https://oapadu.github.io/portfolioassignment/ https://dylans-pixel-art-portfolio.glitch.me/ https://portfolio-mattias.netlify.app/
+(httrack - +cdn.glitch.global* +cdn.glitch.com* -r6 https://lepisto-professional-portfolio.glitch.me/ https://anabels-portfolio2.glitch.me/ https://vaiko-portfolio.glitch.me/ https://chimerical-muffin-e2987d.netlify.app/ https://portfolio-try1.glitch.me/ https://evelin-portfolio.glitch.me/ https://angelina-portfolio-blog.glitch.me/ https://blue-portfolio.glitch.me/ https://ralf-portfolio.glitch.me/ https://kerli-portfolio.glitch.me/ https://www.tlu.ee/~nkdsnake/webdesignproject/main.html https://modular-portfolio.glitch.me https://photo-portfolio-graphy.glitch.me/ https://portfolio-lm.glitch.me/ https://cooly-portfolio.glitch.me/ https://japanese-learning-guide.glitch.me/ https://oapadu.github.io/portfolioassignment/ https://dylans-pixel-art-portfolio.glitch.me/ https://portfolio-mattias.netlify.app/ )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:13:00	Warning: 	Found for https://lepisto-professional-portfolio.glitch.me/robots.txt
+16:13:00	Warning: 	File has moved from https://lepisto-professional-portfolio.glitch.me/robots.txt to /
+16:13:09	Warning: 	Found for https://anabels-portfolio2.glitch.me/robots.txt
+16:13:09	Warning: 	File has moved from https://anabels-portfolio2.glitch.me/robots.txt to /
+16:13:16	Warning: 	Found for https://vaiko-portfolio.glitch.me/robots.txt
+16:13:16	Warning: 	File has moved from https://vaiko-portfolio.glitch.me/robots.txt to /
+16:13:41	Warning: 	Found for https://evelin-portfolio.glitch.me/robots.txt
+16:13:41	Warning: 	File has moved from https://evelin-portfolio.glitch.me/robots.txt to /
+16:13:46	Warning: 	Found for https://angelina-portfolio-blog.glitch.me/robots.txt
+16:13:46	Warning: 	File has moved from https://angelina-portfolio-blog.glitch.me/robots.txt to /
+16:13:51	Warning: 	Found for https://blue-portfolio.glitch.me/robots.txt
+16:13:51	Warning: 	File has moved from https://blue-portfolio.glitch.me/robots.txt to /
+16:13:56	Warning: 	Found for https://ralf-portfolio.glitch.me/robots.txt
+16:13:56	Warning: 	File has moved from https://ralf-portfolio.glitch.me/robots.txt to /
+16:14:00	Warning: 	Found for https://kerli-portfolio.glitch.me/robots.txt
+16:14:00	Warning: 	File has moved from https://kerli-portfolio.glitch.me/robots.txt to /
+16:14:04	Warning: 	Note: due to https://www.tlu.ee remote robots.txt rules, links beginning with these path will be forbidden: /core/, /profiles/, /README.md, /composer/Metapackage/README.txt, /composer/Plugin/ProjectMessage/README.md, /composer/Plugin/Scaffold/README.md, /composer/Plugin/VendorHardening/README.txt, /composer/Template/README.txt, /modules/README.txt, /sites/README.txt, /themes/README.txt, /web.config, /admin/, /comment/reply/, /filter/tips, /node/add/, /search/, /user/register, /user/password, /user/login, /user/logout, /media/oembed, /*/media/oembed, /index.php/admin/, /index.php/comment/reply/, /index.php/filter/tips, /index.php/node/add/, /index.php/search/, /index.php/user/password, /index.php/user/register, /index.php/user/login, /index.php/user/logout, /index.php/media/oembed, /index.php/*/media/oembed, /en/trainings, /koolitused, /erialad, /asio, /masio, /en/erialad, /otsing, /en/otsing (see in the options to disable this)
+16:14:47	Warning: 	Found for https://photo-portfolio-graphy.glitch.me/robots.txt
+16:14:47	Warning: 	File has moved from https://photo-portfolio-graphy.glitch.me/robots.txt to /
+16:15:00	Warning: 	Found for https://cooly-portfolio.glitch.me/robots.txt
+16:15:00	Warning: 	File has moved from https://cooly-portfolio.glitch.me/robots.txt to /
+16:15:16	Warning: 	Found for https://japanese-learning-guide.glitch.me/robots.txt
+16:15:16	Warning: 	File has moved from https://japanese-learning-guide.glitch.me/robots.txt to /
+16:15:33	Warning: 	Found for https://dylans-pixel-art-portfolio.glitch.me/robots.txt
+16:15:33	Warning: 	File has moved from https://dylans-pixel-art-portfolio.glitch.me/robots.txt to /
+16:17:07	Warning: 	Moved Permanently for https://portfolio-mattias.netlify.app/project-tags/in-development project group-project React PHP University post/
+16:17:07	Warning: 	File has moved from https://portfolio-mattias.netlify.app/project-tags/in-development project group-project React PHP University post/ to /project-tags/in-development%20project%20group-project%20react%20php%20university%20post/
+16:17:37	Error: 	"Not Found" (404) at link https://www.tlu.ee/~nkdsnake/webdesignproject/pinterest.com (from https://www.tlu.ee/~nkdsnake/webdesignproject/aboutme.html)
+16:17:55	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 2634): https://www.tlu.ee/~nkdsnake/webdesignproject/addscript.js
+
+HTTrack Website Copier/3.49-2 mirror complete in 5 minutes 37 seconds : 372 links scanned, 350 files written (187910905 bytes overall) [187833790 bytes received at 557370 bytes/sec], 534301 bytes transferred using HTTP compression in 27 files, ratio 31%, 2.0 requests per connection
+(1 errors, 28 warnings, 0 messages)

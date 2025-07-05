@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from cooly-portfolio.glitch.me/about by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jul 2025 13:16:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About me</title>
+  <link rel="stylesheet" href="public/style.css" />
+  <style>
+    .gif-container {
+      position: relative;
+      max-width: 100%;
+      margin: 2rem 0;
+      cursor: pointer;
+    }
+
+    .gif-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid var(--green-acc1, #7fb069);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      display: block;
+    }
+
+    .gif-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      color: var(--accent-hover, #a8d5a8);
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 2rem;
+      border-radius: 10px;
+      z-index: 5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: opacity 0.4s ease;
+    }
+
+    .gif-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+  </header>
+
+  <main class="main-content">
+    <aside class="sidebar left">
+      <h2>Navigation</h2>
+      <p>Check out my projects!</p>
+      <a href="index.html" class="btn-forest">Home →</a>
+    </aside>
+
+    <section class="projects-section">
+      <div class="projects-container">
+        <h1 class="headline" id="projects">About me</h1>
+
+        <div class="project-card">
+          <h2>Hello!</h2>
+          <p>I'm Sophia, a first-year Computer Science student specializing in Digital Media. 
+            I'm still learning and gaining experience, but my goal is to connect programming with art to build engaging and visually expressive experiences.
+            When I’m not coding, I like going to the gym, sketching, and playing games.
+          </p>
+        
+          <p>Thank you for stopping by and feel free to contact me!</p>
+        </div>
+
+        <div class="project-card">
+          <h2>Future ideas</h2>
+          <p>I find the intersection of art and technology fascinating, and I'm always looking for new, creative ways to combine them. In addition to coding, I'm learning 3D modelling in Blender and have experience with video editing using After Effects and DaVinci Resolve. 
+            I like glitchy transitions and use of overlays, so here's a gif clip of something I am working on currently, which I may include in my portfolio in the future.</p>
+
+          <div class="gif-container" onclick="toggleOverlay()">
+            <div class="gif-overlay" id="flash-warning">
+              ⚠️ Flash Warning!<br>This content contains flashing lights.<br><br>
+              Click anywhere to view or hide.
+            </div>
+            <img src="../cdn.glitch.global/1259e6b5-534b-4a63-9877-0c321c4b58b8/spdgif7691.gif?v=1750089581598" alt="Flashing GIF" class="gif-image" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <aside class="sidebar right">
+      <nav>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:you@example.com">Me@example.com</a></li>
+          <li><a href="https://github.com/coolysn" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/sophia-nikolajevski-3ba887272/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </nav>
+      <h3>COMING SOON</h3>
+      <ul>
+        <li><a href="#">Video editing</a></li>
+        <li><a href="#">Blender projects</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>| Use of Cookies | <a href="#">Privacy Policy</a> |</p>
+    <small>© 2025 Sophia's Portfolio</small>
+  </footer>
+
+  <script>
+    function toggleOverlay() {
+      const overlay = document.getElementById("flash-warning");
+      overlay.classList.toggle("hidden");
+    }
+  </script>
+</body>
+
+<!-- Mirrored from cooly-portfolio.glitch.me/about by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jul 2025 13:16:49 GMT -->
+</html>

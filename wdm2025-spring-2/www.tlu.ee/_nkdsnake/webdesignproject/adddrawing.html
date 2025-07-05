@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.tlu.ee/~nkdsnake/webdesignproject/adddrawing.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jul 2025 13:16:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Add Drawing</title>
+</head>
+
+<body>
+    <div class="addpage">
+        <div class="header">
+            <div class="categories">
+                <a href="digital.html">Digital drawings</a>
+                <a href="traditional.html">Traditional drawings</a>
+                <a href="aboutme.html">About me</a>
+            </div>
+            <a id="add" href="adddrawing.html">add drawing</a>
+        </div>
+        <div class="addingconteiner">
+            <p>WIP </p>
+            <iframe width="1864" height="787" src="https://www.youtube.com/embed/ZuyhdtAxnz4"
+                title="dj construction worker extended" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <form id="uploadForm" enctype="multipart/form-data" method="post">
+                <label for="descriptionField">Description:</label><br>
+                <input type="text" id="descriptionField" name="descriptionField" value="Amazing drawing"><br>
+                <label for="timePeriodField">Time period:</label><br>
+                <input type="text" id="timePeriodField" name="timePeriodField" value="2025"><br>
+                <label for="timePeriodField">Category:</label><br>
+                <select name="categorySelect" id="categorySelect">
+                    <option value="digital">digital</option>
+                    <option value="traditional">traditional</option>
+                </select><br>
+                <label for="fileBtn">Select file:</label><br>
+                <input id="fileBtn" type="file" name="drawingFile" accept=".png,.jpg,.jpeg"><br>
+                <input id="addBtn" type="submit" value="add" accept=".png, .jpg">
+            </form>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<!-- <script src="addscript.js" ></script>-->
+
+
+<!-- Mirrored from www.tlu.ee/~nkdsnake/webdesignproject/adddrawing.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jul 2025 13:16:30 GMT -->
+</html>

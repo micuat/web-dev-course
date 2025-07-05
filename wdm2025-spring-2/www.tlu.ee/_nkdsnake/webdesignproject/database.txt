@@ -1,0 +1,15 @@
+{
+    "content": [
+        {"name": "Chopper", "filename":"chopper.png","description": "I drew it while was binge-watching One piece, it was a great time","time": "around 2020", "category": "traditional"},
+        {"name": "Gale", "filename":"gale.png","description": "One of the best digital drwings I've yet done. It is not completed, but I am still really proud","time": "2024", "category": "digital"},
+        {"name": "Sanji","filename":"sanji2.png","description": "Used my brother's ipad for the first time","time": "2021", "category": "digital"},
+        {"name": "Tequila Sunset", "filename":"harriei.png","description": "We made our own painting programm at the Web Elemets, funnily, Harrier here looks much better, then when I drew him on paper","time": "2025", "category": "digital"}, 
+        {"name": "Jojo", "filename":"jojo.png","description": "This is my dog Jojo, I drew him for my mother as a mother's day present","time": "2022", "category": "traditional"},
+        {"name": "Majima", "filename":"majima2.png","description": "My Goro Majima, drew him while I was playing amazing game called 'Like a Dragon: Pirate Yakuza In Hawaii'","time": "2025", "category": "traditional"},
+        {"name": "Godot", "filename":"godotbakamitai.png","description": "Drew this as a local joke, but it turned out really good","time": "2020", "category": "digital"},
+        {"name": "Hanzo", "filename":"hanzo.png","description": "Was trying to learn shading and made this","time": "2023", "category": "digital"},
+        {"name": "Sanji", "filename":"sanji.png","description": "Saw gradient map method on tiktok, started with grayscale, ended up liking it a lot more lmao","time": "2022", "category": "digital"},
+        {"name": "Dwayne", "filename":"therock.png","description": "🤨","time": "2021", "category": "traditional"},
+        {"name": "Anatomy training", "filename":"anatomytraining1.jpg","description": "One of mine anatomy training sessions","time": "2022", "category": "traditional"}
+    ]
+}
